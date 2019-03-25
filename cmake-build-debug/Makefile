@@ -149,6 +149,33 @@ Utilities/Camera.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.s
 .PHONY : Utilities/Camera.cpp.s
 
+Utilities/Plane.obj: Utilities/Plane.cpp.obj
+
+.PHONY : Utilities/Plane.obj
+
+# target to build an object file
+Utilities/Plane.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj
+.PHONY : Utilities/Plane.cpp.obj
+
+Utilities/Plane.i: Utilities/Plane.cpp.i
+
+.PHONY : Utilities/Plane.i
+
+# target to preprocess a source file
+Utilities/Plane.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.i
+.PHONY : Utilities/Plane.cpp.i
+
+Utilities/Plane.s: Utilities/Plane.cpp.s
+
+.PHONY : Utilities/Plane.s
+
+# target to generate assembly for a file
+Utilities/Plane.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.s
+.PHONY : Utilities/Plane.cpp.s
+
 Utilities/Vectors.obj: Utilities/Vectors.cpp.obj
 
 .PHONY : Utilities/Vectors.obj
@@ -215,6 +242,9 @@ help:
 	@echo ... Utilities/Camera.obj
 	@echo ... Utilities/Camera.i
 	@echo ... Utilities/Camera.s
+	@echo ... Utilities/Plane.obj
+	@echo ... Utilities/Plane.i
+	@echo ... Utilities/Plane.s
 	@echo ... Utilities/Vectors.obj
 	@echo ... Utilities/Vectors.i
 	@echo ... Utilities/Vectors.s

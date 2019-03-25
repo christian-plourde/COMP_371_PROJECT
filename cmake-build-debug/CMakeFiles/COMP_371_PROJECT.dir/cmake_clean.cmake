@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj"
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj"
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj"
+  "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj"
   "COMP_371_PROJECT.pdb"
   "COMP_371_PROJECT.exe"
   "COMP_371_PROJECT.exe.manifest"

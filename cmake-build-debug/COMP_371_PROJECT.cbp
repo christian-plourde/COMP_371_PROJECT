@@ -86,6 +86,12 @@
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Camera.h">
 			<Option target="COMP_371_PROJECT"/>
 		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Plane.cpp">
+			<Option target="COMP_371_PROJECT"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Plane.h">
+			<Option target="COMP_371_PROJECT"/>
+		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.cpp">
 			<Option target="COMP_371_PROJECT"/>
 		</Unit>
