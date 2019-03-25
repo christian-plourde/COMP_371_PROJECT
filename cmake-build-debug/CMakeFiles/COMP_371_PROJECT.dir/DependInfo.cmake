@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Camera.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Light.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Matrices.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Mesh.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Plane.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj"

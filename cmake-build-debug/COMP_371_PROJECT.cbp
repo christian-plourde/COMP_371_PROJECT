@@ -92,6 +92,12 @@
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Light.h">
 			<Option target="COMP_371_PROJECT"/>
 		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Matrices.cpp">
+			<Option target="COMP_371_PROJECT"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Matrices.h">
+			<Option target="COMP_371_PROJECT"/>
+		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Mesh.cpp">
 			<Option target="COMP_371_PROJECT"/>
 		</Unit>

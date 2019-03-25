@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj"
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj"
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj"
+  "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj"
   "COMP_371_PROJECT.pdb"
   "COMP_371_PROJECT.exe"
   "COMP_371_PROJECT.exe.manifest"

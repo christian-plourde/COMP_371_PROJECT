@@ -14,6 +14,10 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/
 Vectors.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
 
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Matrices.h
+Vectors.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
+
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Mesh.h
 Vectors.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
@@ -21,14 +25,6 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Plane.h
 Vectors.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
-
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.cpp
-SceneLoader.h
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
-fstream
--
-string
--
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
 vector
@@ -51,4 +47,12 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
 iostream
 -
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/main.cpp
+iostream
+-
+Utilities/SceneLoader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
+Utilities/Matrices.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Matrices.h
 

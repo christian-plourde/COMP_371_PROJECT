@@ -176,6 +176,33 @@ Utilities/Light.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.s
 .PHONY : Utilities/Light.cpp.s
 
+Utilities/Matrices.obj: Utilities/Matrices.cpp.obj
+
+.PHONY : Utilities/Matrices.obj
+
+# target to build an object file
+Utilities/Matrices.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj
+.PHONY : Utilities/Matrices.cpp.obj
+
+Utilities/Matrices.i: Utilities/Matrices.cpp.i
+
+.PHONY : Utilities/Matrices.i
+
+# target to preprocess a source file
+Utilities/Matrices.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.i
+.PHONY : Utilities/Matrices.cpp.i
+
+Utilities/Matrices.s: Utilities/Matrices.cpp.s
+
+.PHONY : Utilities/Matrices.s
+
+# target to generate assembly for a file
+Utilities/Matrices.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.s
+.PHONY : Utilities/Matrices.cpp.s
+
 Utilities/Mesh.obj: Utilities/Mesh.cpp.obj
 
 .PHONY : Utilities/Mesh.obj
@@ -353,6 +380,9 @@ help:
 	@echo ... Utilities/Light.obj
 	@echo ... Utilities/Light.i
 	@echo ... Utilities/Light.s
+	@echo ... Utilities/Matrices.obj
+	@echo ... Utilities/Matrices.i
+	@echo ... Utilities/Matrices.s
 	@echo ... Utilities/Mesh.obj
 	@echo ... Utilities/Mesh.i
 	@echo ... Utilities/Mesh.s

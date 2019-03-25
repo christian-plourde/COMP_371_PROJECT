@@ -18,6 +18,7 @@ class SceneLoader
         std::vector<Sphere> spheres;
         int object_count;
         const char* filename;
+        void print_data();
 
     public:
         SceneLoader();
@@ -25,6 +26,11 @@ class SceneLoader
         bool loadScene();
         inline void setFilePath(const char* file){filename = file;}
         inline const char* getFilePath(){return filename;}
+        inline Camera& getCamera(){return camera;}
+        inline Mesh& getMesh(){return mesh;}
+        inline Plane& getPlane(){return plane;}
+        inline std::vector<Sphere>& getSpheres(){return spheres;}
+        inline std::vector<Light>& getLights(){return lights;}
 };
 
 #endif

@@ -23,6 +23,11 @@ class Plane
         inline void setSpecularColor(Vec3 c){specular_color = c;}
         inline void setShininess(float f){shininess = f;}
         inline Vec3& getNormal(){return normal;}
+        inline Vec3& getPosition(){return position;}
+        inline Vec3& getAmbientColor(){return ambient_color;}
+        inline Vec3& getDiffuseColor(){return diffuse_color;}
+        inline Vec3& getSpecularColor(){return specular_color;}
+        inline float getShininess(){return shininess;}
 };
 
 #endif

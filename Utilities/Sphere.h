@@ -23,6 +23,11 @@ class Sphere
         inline void setShininess(float f){shininess = f;}
         inline void setRadius(float r){radius = r;}
         inline Vec3& getPosition(){return position;}
+        inline Vec3& getAmbientColor(){return ambient_color;}
+        inline Vec3& getDiffuseColor(){return diffuse_color;}
+        inline Vec3& getSpecularColor(){return specular_color;}
+        inline float getShininess(){return shininess;}
+        inline float getRadius(){return radius;}
 };
 
 #endif

@@ -9,6 +9,10 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj: ../Utilities/Light.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj: ../Utilities/Light.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj: ../Utilities/Vectors.h
 
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj: ../Utilities/Matrices.cpp
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj: ../Utilities/Matrices.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj: ../Utilities/Vectors.h
+
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj: ../Utilities/Mesh.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj: ../Utilities/Mesh.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj: ../Utilities/Vectors.h
@@ -35,6 +39,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj: ../Utilities/Vectors.
 
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Camera.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Light.h
+CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Matrices.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Mesh.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Plane.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneLoader.h

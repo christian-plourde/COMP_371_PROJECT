@@ -3,4 +3,4 @@ project(COMP_371_PROJECT)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(COMP_371_PROJECT main.cpp Utilities/Camera.cpp Utilities/Vectors.cpp Utilities/Plane.cpp Utilities/Sphere.cpp Utilities/Mesh.cpp Utilities/Light.cpp Utilities/SceneLoader.cpp)
+add_executable(COMP_371_PROJECT main.cpp Utilities/Camera.cpp Utilities/Vectors.cpp Utilities/Plane.cpp Utilities/Sphere.cpp Utilities/Mesh.cpp Utilities/Light.cpp Utilities/SceneLoader.cpp Utilities/Matrices.cpp)
