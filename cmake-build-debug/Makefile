@@ -149,6 +149,60 @@ Utilities/Camera.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.s
 .PHONY : Utilities/Camera.cpp.s
 
+Utilities/Light.obj: Utilities/Light.cpp.obj
+
+.PHONY : Utilities/Light.obj
+
+# target to build an object file
+Utilities/Light.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj
+.PHONY : Utilities/Light.cpp.obj
+
+Utilities/Light.i: Utilities/Light.cpp.i
+
+.PHONY : Utilities/Light.i
+
+# target to preprocess a source file
+Utilities/Light.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.i
+.PHONY : Utilities/Light.cpp.i
+
+Utilities/Light.s: Utilities/Light.cpp.s
+
+.PHONY : Utilities/Light.s
+
+# target to generate assembly for a file
+Utilities/Light.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.s
+.PHONY : Utilities/Light.cpp.s
+
+Utilities/Mesh.obj: Utilities/Mesh.cpp.obj
+
+.PHONY : Utilities/Mesh.obj
+
+# target to build an object file
+Utilities/Mesh.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj
+.PHONY : Utilities/Mesh.cpp.obj
+
+Utilities/Mesh.i: Utilities/Mesh.cpp.i
+
+.PHONY : Utilities/Mesh.i
+
+# target to preprocess a source file
+Utilities/Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.i
+.PHONY : Utilities/Mesh.cpp.i
+
+Utilities/Mesh.s: Utilities/Mesh.cpp.s
+
+.PHONY : Utilities/Mesh.s
+
+# target to generate assembly for a file
+Utilities/Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.s
+.PHONY : Utilities/Mesh.cpp.s
+
 Utilities/Plane.obj: Utilities/Plane.cpp.obj
 
 .PHONY : Utilities/Plane.obj
@@ -175,6 +229,60 @@ Utilities/Plane.s: Utilities/Plane.cpp.s
 Utilities/Plane.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.s
 .PHONY : Utilities/Plane.cpp.s
+
+Utilities/SceneLoader.obj: Utilities/SceneLoader.cpp.obj
+
+.PHONY : Utilities/SceneLoader.obj
+
+# target to build an object file
+Utilities/SceneLoader.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj
+.PHONY : Utilities/SceneLoader.cpp.obj
+
+Utilities/SceneLoader.i: Utilities/SceneLoader.cpp.i
+
+.PHONY : Utilities/SceneLoader.i
+
+# target to preprocess a source file
+Utilities/SceneLoader.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.i
+.PHONY : Utilities/SceneLoader.cpp.i
+
+Utilities/SceneLoader.s: Utilities/SceneLoader.cpp.s
+
+.PHONY : Utilities/SceneLoader.s
+
+# target to generate assembly for a file
+Utilities/SceneLoader.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.s
+.PHONY : Utilities/SceneLoader.cpp.s
+
+Utilities/Sphere.obj: Utilities/Sphere.cpp.obj
+
+.PHONY : Utilities/Sphere.obj
+
+# target to build an object file
+Utilities/Sphere.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj
+.PHONY : Utilities/Sphere.cpp.obj
+
+Utilities/Sphere.i: Utilities/Sphere.cpp.i
+
+.PHONY : Utilities/Sphere.i
+
+# target to preprocess a source file
+Utilities/Sphere.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.i
+.PHONY : Utilities/Sphere.cpp.i
+
+Utilities/Sphere.s: Utilities/Sphere.cpp.s
+
+.PHONY : Utilities/Sphere.s
+
+# target to generate assembly for a file
+Utilities/Sphere.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.s
+.PHONY : Utilities/Sphere.cpp.s
 
 Utilities/Vectors.obj: Utilities/Vectors.cpp.obj
 
@@ -242,9 +350,21 @@ help:
 	@echo ... Utilities/Camera.obj
 	@echo ... Utilities/Camera.i
 	@echo ... Utilities/Camera.s
+	@echo ... Utilities/Light.obj
+	@echo ... Utilities/Light.i
+	@echo ... Utilities/Light.s
+	@echo ... Utilities/Mesh.obj
+	@echo ... Utilities/Mesh.i
+	@echo ... Utilities/Mesh.s
 	@echo ... Utilities/Plane.obj
 	@echo ... Utilities/Plane.i
 	@echo ... Utilities/Plane.s
+	@echo ... Utilities/SceneLoader.obj
+	@echo ... Utilities/SceneLoader.i
+	@echo ... Utilities/SceneLoader.s
+	@echo ... Utilities/Sphere.obj
+	@echo ... Utilities/Sphere.i
+	@echo ... Utilities/Sphere.s
 	@echo ... Utilities/Vectors.obj
 	@echo ... Utilities/Vectors.i
 	@echo ... Utilities/Vectors.s

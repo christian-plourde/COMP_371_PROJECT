@@ -1,11 +1,12 @@
 #include <iostream>
-#include "Utilities/Camera.h"
+#include "Utilities/SceneLoader.h"
 
-int main() {
-    Camera camera;
-    Vec3 pos(1.2,2,3);
-    camera.setPosition(pos);
-    std::cout << camera.getPosition() << std::endl;
+int main()
+{
+    SceneLoader loader;
+    loader.setFilePath("../scenes/scene1.txt");
+    loader.loadScene();
+
 
     return 0;
 }

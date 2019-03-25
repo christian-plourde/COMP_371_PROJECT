@@ -5,10 +5,40 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Camera.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Camera.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Light.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Mesh.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Mesh.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Plane.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Plane.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Camera.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Mesh.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Plane.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Sphere.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Sphere.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Sphere.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Camera.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Mesh.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Plane.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Sphere.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/main.cpp
