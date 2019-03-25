@@ -21,7 +21,7 @@ Vec3::Vec3(float n)
     z = n;
 }
 
-std::ostream& operator<<(std::ostream& os, Vec3& vector)
+std::ostream& operator<<(std::ostream& os, Vec3 vector)
 {
     os << "<" << vector.x << ", " << vector.y << ", " << vector.z << ">";
     return os;
@@ -74,7 +74,7 @@ Vec4::Vec4(Vec3 v, float n)
     w = n;
 }
 
-std::ostream& operator<<(std::ostream& os, Vec4& vector)
+std::ostream& operator<<(std::ostream& os, Vec4 vector)
 {
     os << "<" << vector.x << ", " << vector.y << ", " << vector.z << ", " << vector.w << ">";
     return os;
@@ -98,3 +98,17 @@ float Vec4::operator[](int i)
         return w;
 }
 
+Vec3 operator*(Vec3& vec1, Vec3& vec2)
+{
+    return Vec3(vec1[1]*vec2[2] - vec1[2]*vec2[1], vec1[2]*vec2[0] - vec1[0]*vec2[2], vec1[0]*vec2[1] - vec1[1]*vec2[0]);
+}
+
+float Vec3::dot(Vec3& vector)
+{
+    return x*vector.x + y*vector.y + z*vector.z;
+}
+
+float Vec4::dot(Vec4& vector)
+{
+    return x*vector.x + y*vector.y + z*vector.z + w*vector.w;
+}
