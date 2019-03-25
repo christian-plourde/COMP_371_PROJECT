@@ -69,83 +69,83 @@ CMakeFiles/COMP_371_PROJECT.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\main.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\main.cpp.s
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj: ../Utilities/Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Camera.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Camera.cpp"
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj: ../Utilities/SceneElements/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Camera.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Camera.cpp"
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Camera.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\Camera.cpp.i
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Camera.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Camera.cpp.i
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Camera.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Camera.cpp.s
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Camera.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Camera.cpp.s
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj: ../Utilities/Vectors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Vectors.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Vectors.cpp"
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj: ../Utilities/Math/Vectors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\Vectors.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\Vectors.cpp"
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Vectors.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\Vectors.cpp.i
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\Vectors.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\Vectors.cpp.i
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Vectors.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Vectors.cpp.s
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\Vectors.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\Vectors.cpp.s
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj: ../Utilities/Plane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Plane.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Plane.cpp"
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj: ../Utilities/SceneElements/Plane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Plane.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Plane.cpp"
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Plane.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\Plane.cpp.i
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Plane.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Plane.cpp.i
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Plane.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Plane.cpp.s
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Plane.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Plane.cpp.s
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj: ../Utilities/Sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Sphere.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Sphere.cpp"
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj: ../Utilities/SceneElements/Sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Sphere.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Sphere.cpp"
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Sphere.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\Sphere.cpp.i
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Sphere.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Sphere.cpp.i
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Sphere.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Sphere.cpp.s
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Sphere.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Sphere.cpp.s
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj: ../Utilities/Mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Mesh.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Mesh.cpp"
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj: ../Utilities/SceneElements/Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Mesh.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Mesh.cpp"
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Mesh.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\Mesh.cpp.i
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Mesh.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Mesh.cpp.i
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Mesh.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Mesh.cpp.s
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Mesh.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Mesh.cpp.s
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj: ../Utilities/Light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Light.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Light.cpp"
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.obj: ../Utilities/SceneElements/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Light.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Light.cpp"
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Light.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\Light.cpp.i
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Light.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Light.cpp.i
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Light.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Light.cpp.s
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneElements\Light.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneElements\Light.cpp.s
 
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneLoader.cpp
@@ -160,43 +160,43 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\SceneLoader.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\SceneLoader.cpp.s
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj: ../Utilities/Matrices.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Matrices.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Matrices.cpp"
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj: ../Utilities/Math/Matrices.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\Matrices.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\Matrices.cpp"
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Matrices.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\Matrices.cpp.i
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\Matrices.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\Matrices.cpp.i
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Matrices.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Matrices.cpp.s
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\Matrices.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\Matrices.cpp.s
 
 # Object files for target COMP_371_PROJECT
 COMP_371_PROJECT_OBJECTS = \
 "CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj" \
-"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj" \
-"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj" \
-"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj" \
-"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj" \
-"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj" \
-"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj" \
+"CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj" \
+"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj" \
+"CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj" \
+"CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj" \
+"CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj" \
+"CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.obj" \
 "CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj" \
-"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj"
+"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj"
 
 # External object files for target COMP_371_PROJECT
 COMP_371_PROJECT_EXTERNAL_OBJECTS =
 
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj
-COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj
-COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj
-COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj
-COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj
-COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj
-COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj
+COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj
+COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj
+COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj
+COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj
+COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj
+COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.obj
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj
-COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj
+COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/build.make
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/linklibs.rsp
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/objects1.rsp

@@ -1,7 +1,7 @@
 #ifndef COMP_371_PROJECT_CAMERA_H
 #define COMP_371_PROJECT_CAMERA_H
 
-#include "Vectors.h"
+#include "../Math/Vectors.h"
 
 class Camera
 {
@@ -10,6 +10,8 @@ class Camera
         float fov; //field of view in degrees
         float focal_length; //focal length of the camera (a floating point number)
         float aspect_ratio; //the aspect ration of the camera
+        float radians(float deg);
+        float degrees(float radians);
 
     public:
         Camera();
@@ -22,6 +24,8 @@ class Camera
         inline float getFOV(){return fov;}
         inline float getFocalLength(){return focal_length;}
         inline float getAspectRatio(){return aspect_ratio;}
+        int getViewHeight();
+        int getViewWidth();
 };
 
 #endif

@@ -122,140 +122,194 @@ COMP_371_PROJECT/fast:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/build
 .PHONY : COMP_371_PROJECT/fast
 
-Utilities/Camera.obj: Utilities/Camera.cpp.obj
+Utilities/Math/Matrices.obj: Utilities/Math/Matrices.cpp.obj
 
-.PHONY : Utilities/Camera.obj
-
-# target to build an object file
-Utilities/Camera.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj
-.PHONY : Utilities/Camera.cpp.obj
-
-Utilities/Camera.i: Utilities/Camera.cpp.i
-
-.PHONY : Utilities/Camera.i
-
-# target to preprocess a source file
-Utilities/Camera.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.i
-.PHONY : Utilities/Camera.cpp.i
-
-Utilities/Camera.s: Utilities/Camera.cpp.s
-
-.PHONY : Utilities/Camera.s
-
-# target to generate assembly for a file
-Utilities/Camera.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.s
-.PHONY : Utilities/Camera.cpp.s
-
-Utilities/Light.obj: Utilities/Light.cpp.obj
-
-.PHONY : Utilities/Light.obj
+.PHONY : Utilities/Math/Matrices.obj
 
 # target to build an object file
-Utilities/Light.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj
-.PHONY : Utilities/Light.cpp.obj
+Utilities/Math/Matrices.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj
+.PHONY : Utilities/Math/Matrices.cpp.obj
 
-Utilities/Light.i: Utilities/Light.cpp.i
+Utilities/Math/Matrices.i: Utilities/Math/Matrices.cpp.i
 
-.PHONY : Utilities/Light.i
+.PHONY : Utilities/Math/Matrices.i
 
 # target to preprocess a source file
-Utilities/Light.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.i
-.PHONY : Utilities/Light.cpp.i
+Utilities/Math/Matrices.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.i
+.PHONY : Utilities/Math/Matrices.cpp.i
 
-Utilities/Light.s: Utilities/Light.cpp.s
+Utilities/Math/Matrices.s: Utilities/Math/Matrices.cpp.s
 
-.PHONY : Utilities/Light.s
+.PHONY : Utilities/Math/Matrices.s
 
 # target to generate assembly for a file
-Utilities/Light.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.s
-.PHONY : Utilities/Light.cpp.s
+Utilities/Math/Matrices.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.s
+.PHONY : Utilities/Math/Matrices.cpp.s
 
-Utilities/Matrices.obj: Utilities/Matrices.cpp.obj
+Utilities/Math/Vectors.obj: Utilities/Math/Vectors.cpp.obj
 
-.PHONY : Utilities/Matrices.obj
+.PHONY : Utilities/Math/Vectors.obj
 
 # target to build an object file
-Utilities/Matrices.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj
-.PHONY : Utilities/Matrices.cpp.obj
+Utilities/Math/Vectors.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj
+.PHONY : Utilities/Math/Vectors.cpp.obj
 
-Utilities/Matrices.i: Utilities/Matrices.cpp.i
+Utilities/Math/Vectors.i: Utilities/Math/Vectors.cpp.i
 
-.PHONY : Utilities/Matrices.i
+.PHONY : Utilities/Math/Vectors.i
 
 # target to preprocess a source file
-Utilities/Matrices.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.i
-.PHONY : Utilities/Matrices.cpp.i
+Utilities/Math/Vectors.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.i
+.PHONY : Utilities/Math/Vectors.cpp.i
 
-Utilities/Matrices.s: Utilities/Matrices.cpp.s
+Utilities/Math/Vectors.s: Utilities/Math/Vectors.cpp.s
 
-.PHONY : Utilities/Matrices.s
+.PHONY : Utilities/Math/Vectors.s
 
 # target to generate assembly for a file
-Utilities/Matrices.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.s
-.PHONY : Utilities/Matrices.cpp.s
+Utilities/Math/Vectors.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.s
+.PHONY : Utilities/Math/Vectors.cpp.s
 
-Utilities/Mesh.obj: Utilities/Mesh.cpp.obj
+Utilities/SceneElements/Camera.obj: Utilities/SceneElements/Camera.cpp.obj
 
-.PHONY : Utilities/Mesh.obj
+.PHONY : Utilities/SceneElements/Camera.obj
 
 # target to build an object file
-Utilities/Mesh.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj
-.PHONY : Utilities/Mesh.cpp.obj
+Utilities/SceneElements/Camera.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj
+.PHONY : Utilities/SceneElements/Camera.cpp.obj
 
-Utilities/Mesh.i: Utilities/Mesh.cpp.i
+Utilities/SceneElements/Camera.i: Utilities/SceneElements/Camera.cpp.i
 
-.PHONY : Utilities/Mesh.i
+.PHONY : Utilities/SceneElements/Camera.i
 
 # target to preprocess a source file
-Utilities/Mesh.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.i
-.PHONY : Utilities/Mesh.cpp.i
+Utilities/SceneElements/Camera.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.i
+.PHONY : Utilities/SceneElements/Camera.cpp.i
 
-Utilities/Mesh.s: Utilities/Mesh.cpp.s
+Utilities/SceneElements/Camera.s: Utilities/SceneElements/Camera.cpp.s
 
-.PHONY : Utilities/Mesh.s
+.PHONY : Utilities/SceneElements/Camera.s
 
 # target to generate assembly for a file
-Utilities/Mesh.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.s
-.PHONY : Utilities/Mesh.cpp.s
+Utilities/SceneElements/Camera.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.s
+.PHONY : Utilities/SceneElements/Camera.cpp.s
 
-Utilities/Plane.obj: Utilities/Plane.cpp.obj
+Utilities/SceneElements/Light.obj: Utilities/SceneElements/Light.cpp.obj
 
-.PHONY : Utilities/Plane.obj
+.PHONY : Utilities/SceneElements/Light.obj
 
 # target to build an object file
-Utilities/Plane.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj
-.PHONY : Utilities/Plane.cpp.obj
+Utilities/SceneElements/Light.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.obj
+.PHONY : Utilities/SceneElements/Light.cpp.obj
 
-Utilities/Plane.i: Utilities/Plane.cpp.i
+Utilities/SceneElements/Light.i: Utilities/SceneElements/Light.cpp.i
 
-.PHONY : Utilities/Plane.i
+.PHONY : Utilities/SceneElements/Light.i
 
 # target to preprocess a source file
-Utilities/Plane.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.i
-.PHONY : Utilities/Plane.cpp.i
+Utilities/SceneElements/Light.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.i
+.PHONY : Utilities/SceneElements/Light.cpp.i
 
-Utilities/Plane.s: Utilities/Plane.cpp.s
+Utilities/SceneElements/Light.s: Utilities/SceneElements/Light.cpp.s
 
-.PHONY : Utilities/Plane.s
+.PHONY : Utilities/SceneElements/Light.s
 
 # target to generate assembly for a file
-Utilities/Plane.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.s
-.PHONY : Utilities/Plane.cpp.s
+Utilities/SceneElements/Light.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.s
+.PHONY : Utilities/SceneElements/Light.cpp.s
+
+Utilities/SceneElements/Mesh.obj: Utilities/SceneElements/Mesh.cpp.obj
+
+.PHONY : Utilities/SceneElements/Mesh.obj
+
+# target to build an object file
+Utilities/SceneElements/Mesh.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj
+.PHONY : Utilities/SceneElements/Mesh.cpp.obj
+
+Utilities/SceneElements/Mesh.i: Utilities/SceneElements/Mesh.cpp.i
+
+.PHONY : Utilities/SceneElements/Mesh.i
+
+# target to preprocess a source file
+Utilities/SceneElements/Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.i
+.PHONY : Utilities/SceneElements/Mesh.cpp.i
+
+Utilities/SceneElements/Mesh.s: Utilities/SceneElements/Mesh.cpp.s
+
+.PHONY : Utilities/SceneElements/Mesh.s
+
+# target to generate assembly for a file
+Utilities/SceneElements/Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.s
+.PHONY : Utilities/SceneElements/Mesh.cpp.s
+
+Utilities/SceneElements/Plane.obj: Utilities/SceneElements/Plane.cpp.obj
+
+.PHONY : Utilities/SceneElements/Plane.obj
+
+# target to build an object file
+Utilities/SceneElements/Plane.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj
+.PHONY : Utilities/SceneElements/Plane.cpp.obj
+
+Utilities/SceneElements/Plane.i: Utilities/SceneElements/Plane.cpp.i
+
+.PHONY : Utilities/SceneElements/Plane.i
+
+# target to preprocess a source file
+Utilities/SceneElements/Plane.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.i
+.PHONY : Utilities/SceneElements/Plane.cpp.i
+
+Utilities/SceneElements/Plane.s: Utilities/SceneElements/Plane.cpp.s
+
+.PHONY : Utilities/SceneElements/Plane.s
+
+# target to generate assembly for a file
+Utilities/SceneElements/Plane.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.s
+.PHONY : Utilities/SceneElements/Plane.cpp.s
+
+Utilities/SceneElements/Sphere.obj: Utilities/SceneElements/Sphere.cpp.obj
+
+.PHONY : Utilities/SceneElements/Sphere.obj
+
+# target to build an object file
+Utilities/SceneElements/Sphere.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj
+.PHONY : Utilities/SceneElements/Sphere.cpp.obj
+
+Utilities/SceneElements/Sphere.i: Utilities/SceneElements/Sphere.cpp.i
+
+.PHONY : Utilities/SceneElements/Sphere.i
+
+# target to preprocess a source file
+Utilities/SceneElements/Sphere.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.i
+.PHONY : Utilities/SceneElements/Sphere.cpp.i
+
+Utilities/SceneElements/Sphere.s: Utilities/SceneElements/Sphere.cpp.s
+
+.PHONY : Utilities/SceneElements/Sphere.s
+
+# target to generate assembly for a file
+Utilities/SceneElements/Sphere.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.s
+.PHONY : Utilities/SceneElements/Sphere.cpp.s
 
 Utilities/SceneLoader.obj: Utilities/SceneLoader.cpp.obj
 
@@ -283,60 +337,6 @@ Utilities/SceneLoader.s: Utilities/SceneLoader.cpp.s
 Utilities/SceneLoader.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.s
 .PHONY : Utilities/SceneLoader.cpp.s
-
-Utilities/Sphere.obj: Utilities/Sphere.cpp.obj
-
-.PHONY : Utilities/Sphere.obj
-
-# target to build an object file
-Utilities/Sphere.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj
-.PHONY : Utilities/Sphere.cpp.obj
-
-Utilities/Sphere.i: Utilities/Sphere.cpp.i
-
-.PHONY : Utilities/Sphere.i
-
-# target to preprocess a source file
-Utilities/Sphere.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.i
-.PHONY : Utilities/Sphere.cpp.i
-
-Utilities/Sphere.s: Utilities/Sphere.cpp.s
-
-.PHONY : Utilities/Sphere.s
-
-# target to generate assembly for a file
-Utilities/Sphere.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.s
-.PHONY : Utilities/Sphere.cpp.s
-
-Utilities/Vectors.obj: Utilities/Vectors.cpp.obj
-
-.PHONY : Utilities/Vectors.obj
-
-# target to build an object file
-Utilities/Vectors.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj
-.PHONY : Utilities/Vectors.cpp.obj
-
-Utilities/Vectors.i: Utilities/Vectors.cpp.i
-
-.PHONY : Utilities/Vectors.i
-
-# target to preprocess a source file
-Utilities/Vectors.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.i
-.PHONY : Utilities/Vectors.cpp.i
-
-Utilities/Vectors.s: Utilities/Vectors.cpp.s
-
-.PHONY : Utilities/Vectors.s
-
-# target to generate assembly for a file
-Utilities/Vectors.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.s
-.PHONY : Utilities/Vectors.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -374,30 +374,30 @@ help:
 	@echo ... COMP_371_PROJECT
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Utilities/Camera.obj
-	@echo ... Utilities/Camera.i
-	@echo ... Utilities/Camera.s
-	@echo ... Utilities/Light.obj
-	@echo ... Utilities/Light.i
-	@echo ... Utilities/Light.s
-	@echo ... Utilities/Matrices.obj
-	@echo ... Utilities/Matrices.i
-	@echo ... Utilities/Matrices.s
-	@echo ... Utilities/Mesh.obj
-	@echo ... Utilities/Mesh.i
-	@echo ... Utilities/Mesh.s
-	@echo ... Utilities/Plane.obj
-	@echo ... Utilities/Plane.i
-	@echo ... Utilities/Plane.s
+	@echo ... Utilities/Math/Matrices.obj
+	@echo ... Utilities/Math/Matrices.i
+	@echo ... Utilities/Math/Matrices.s
+	@echo ... Utilities/Math/Vectors.obj
+	@echo ... Utilities/Math/Vectors.i
+	@echo ... Utilities/Math/Vectors.s
+	@echo ... Utilities/SceneElements/Camera.obj
+	@echo ... Utilities/SceneElements/Camera.i
+	@echo ... Utilities/SceneElements/Camera.s
+	@echo ... Utilities/SceneElements/Light.obj
+	@echo ... Utilities/SceneElements/Light.i
+	@echo ... Utilities/SceneElements/Light.s
+	@echo ... Utilities/SceneElements/Mesh.obj
+	@echo ... Utilities/SceneElements/Mesh.i
+	@echo ... Utilities/SceneElements/Mesh.s
+	@echo ... Utilities/SceneElements/Plane.obj
+	@echo ... Utilities/SceneElements/Plane.i
+	@echo ... Utilities/SceneElements/Plane.s
+	@echo ... Utilities/SceneElements/Sphere.obj
+	@echo ... Utilities/SceneElements/Sphere.i
+	@echo ... Utilities/SceneElements/Sphere.s
 	@echo ... Utilities/SceneLoader.obj
 	@echo ... Utilities/SceneLoader.i
 	@echo ... Utilities/SceneLoader.s
-	@echo ... Utilities/Sphere.obj
-	@echo ... Utilities/Sphere.i
-	@echo ... Utilities/Sphere.s
-	@echo ... Utilities/Vectors.obj
-	@echo ... Utilities/Vectors.i
-	@echo ... Utilities/Vectors.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

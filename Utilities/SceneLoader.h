@@ -2,11 +2,11 @@
 #define SCENE_LOADER_H
 
 #include <vector>
-#include "Camera.h"
-#include "Light.h"
-#include "Mesh.h"
-#include "Plane.h"
-#include "Sphere.h"
+#include "SceneElements/Camera.h"
+#include "SceneElements/Light.h"
+#include "SceneElements/Mesh.h"
+#include "SceneElements/Plane.h"
+#include "SceneElements/Sphere.h"
 
 class SceneLoader
 {

@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Camera.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj"
-  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Light.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj"
-  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Matrices.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj"
-  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Mesh.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj"
-  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Plane.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Matrices.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Light.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Mesh.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj"
-  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Sphere.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj"
-  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Vectors.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/main.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

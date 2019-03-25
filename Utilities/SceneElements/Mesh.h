@@ -1,27 +1,30 @@
-#ifndef LIGHT_H
-#define LIGHT_H
+#ifndef MESH_H
+#define MESH_H
 
-#include "Vectors.h"
+#include "../Math/Vectors.h"
 
-class Light
+class Mesh
 {
     private:
-        Vec3 position;
+        const char* filename;
         Vec3 ambient_color;
         Vec3 diffuse_color;
         Vec3 specular_color;
+        float shininess;
 
     public:
-        Light();
-        ~Light();
-        inline void setPosition(Vec3 p){position = p;}
+        Mesh();
+        ~Mesh();
+        inline void setFilePath(const char* filepath){filename = filepath;}
         inline void setAmbientColor(Vec3 c){ambient_color = c;}
         inline void setDiffuseColor(Vec3 c){diffuse_color = c;}
         inline void setSpecularColor(Vec3 c){specular_color = c;}
-        inline Vec3& getPosition(){return position;}
+        inline void setShininess(float f){shininess = f;}
         inline Vec3& getAmbientColor(){return ambient_color;}
+        inline const char* getFileName(){return filename;}
         inline Vec3& getDiffuseColor(){return diffuse_color;}
         inline Vec3& getSpecularColor(){return specular_color;}
+        inline float getShininess(){return shininess;}
 };
 
 #endif
