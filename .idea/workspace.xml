@@ -13,19 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f91c2776-864e-40dd-b6c0-9ffb3a74b2bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities/Matrices.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Matrices.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities/Matrices.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Matrices.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities/Vectors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Vectors.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities/Vectors.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Vectors.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Camera.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Light.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Matrices.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Mesh.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Plane.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP_371_PROJECT.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP_371_PROJECT.exe" afterDir="false" />
@@ -44,11 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="207">
+              <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -78,8 +65,8 @@
         <option value="$PROJECT_DIR$/Utilities/Vectors.h" />
         <option value="$PROJECT_DIR$/Utilities/Vectors.cpp" />
         <option value="$PROJECT_DIR$/Utilities/Matrices.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Utilities/Matrices.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -97,6 +84,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -104,16 +92,10 @@
               <item name="COMP_371_PROJECT" type="b2602c69:ProjectViewProjectNode" />
               <item name="COMP_371_PROJECT" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="COMP_371_PROJECT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP_371_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -122,7 +104,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Libraries" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Libraries" />
       <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities" />
     </key>
   </component>
@@ -158,23 +144,24 @@
       <workItem from="1553277180449" duration="1352000" />
       <workItem from="1553472065157" duration="186000" />
       <workItem from="1553515458953" duration="6069000" />
-      <workItem from="1553523791328" duration="13607000" />
+      <workItem from="1553523791328" duration="14273000" />
+      <workItem from="1553539745181" duration="906000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21214000" />
+    <option name="totallyTimeSpent" value="22786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.261924" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26596606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899627" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32899627" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -346,18 +333,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/Matrices.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="148" column="40" lean-forward="true" selection-start-line="148" selection-start-column="40" selection-end-line="148" selection-end-column="40" />
+        <state relative-caret-position="176">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="207">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
         </state>
       </provider>
     </entry>

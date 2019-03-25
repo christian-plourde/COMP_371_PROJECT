@@ -37,6 +37,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Sphere.cpp.obj: ../Utilities/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj: ../Utilities/Vectors.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Vectors.cpp.obj: ../Utilities/Vectors.h
 
+CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Libraries/CImg.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Camera.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Light.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Matrices.h

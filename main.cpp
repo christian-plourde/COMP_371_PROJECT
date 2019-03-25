@@ -1,10 +1,17 @@
 #include <iostream>
 #include "Utilities/SceneLoader.h"
 #include "Utilities/Matrices.h"
+#include "Libraries/CImg.h"
 
 int main()
 {
     SceneLoader loader;
+
+    cimg_library::CImg<unsigned char> img(640, 400, 1, 3);
+    img.fill(0);
+    unsigned char purple[] = {255, 0, 255};
+    img.draw_text(100, 100, "Hello World", purple);
+
     loader.setFilePath("../scenes/scene1.txt");
     loader.loadScene();
 
