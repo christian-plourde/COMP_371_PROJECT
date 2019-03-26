@@ -1,8 +1,8 @@
 4
 camera
 pos: 0 2 10
-fov: 60
-f: 100
+fov: 30
+f: 500
 a: 1.33
 plane
 nor: 0 1 0

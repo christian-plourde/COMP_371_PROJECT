@@ -19,7 +19,7 @@ RayTracer::RayTracer(Camera c)
         for(int y = 0; y < view_height; y++)
         {
             //iterate over each "pixel" that the camera can see and set the ray for that pixel
-            rays.addRay(Vec3(x-view_width/2, view_height/2 - y, camera.getFocalLength()), Pixel(x, y));
+            rays.addRay(Vec3(view_width/2 - x, y - view_height/2, camera.getFocalLength()), Pixel(x, y));
         }
     }
 }

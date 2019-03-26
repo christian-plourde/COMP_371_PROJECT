@@ -1,8 +1,8 @@
 6
 camera
 pos: 0 0 0
-fov: 60
-f: 500
+fov: 30
+f: 100
 a: 1.33
 sphere
 pos: 0 0 -100
