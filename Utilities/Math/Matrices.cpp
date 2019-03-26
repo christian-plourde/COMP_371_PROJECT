@@ -148,3 +148,8 @@ Mat4 operator*(Mat4& matrix1, Mat4& matrix2)
 
     return Mat4(row0, row1, row2, row3);
 }
+
+Mat4 Mat4::operator=(Mat4 &matrix)
+{
+    return Mat4(matrix.row_0, matrix.row_1, matrix.row_2, matrix.row_3);
+}

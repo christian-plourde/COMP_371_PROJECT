@@ -1,5 +1,46 @@
 #include "Vectors.h"
 
+Vec2::Vec2()
+{
+    x = 0.0;
+    y = 0.0;
+}
+
+Vec2::Vec2(float x, float y)
+{
+    this->x = x;
+    this->y = y;
+}
+
+Vec2::Vec2(float n)
+{
+    x = n;
+    y = n;
+}
+
+float Vec2::operator[](int i)
+{
+    if(i > 1 || i < 0)
+        return x;
+
+    if(i == 0)
+        return x;
+
+    if(i == 1)
+        return y;
+}
+
+std::ostream& operator<<(std::ostream& os, Vec2 vector)
+{
+    os << "<" << vector.x << ", " << vector.y << ">";
+    return os;
+}
+
+float Vec2::dot(Vec2 &vector)
+{
+    return x*vector.x + y*vector.y;
+}
+
 Vec3::Vec3()
 {
     x = 0.0;
@@ -112,3 +153,9 @@ float Vec4::dot(Vec4& vector)
 {
     return x*vector.x + y*vector.y + z*vector.z + w*vector.w;
 }
+
+Vec4 operator+(Vec4& vec1, Vec4& vec2)
+{
+    return Vec4(vec1.x + vec2.x, vec1.y + vec2.y, vec1.z + vec2.z, vec1.w + vec2.w);
+}
+

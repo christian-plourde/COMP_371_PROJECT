@@ -39,6 +39,7 @@ class Mat4
         Vec4& operator[](int i);
         friend Vec4 operator*(Mat4& matrix, Vec4& vector); //matrix vector multiplication
         friend Mat4 operator*(Mat4& matrix1, Mat4& matrix2); //matrix matrix multiplication
+        Mat4 operator=(Mat4& matrix);
 };
 
 #endif

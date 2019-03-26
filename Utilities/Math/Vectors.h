@@ -3,6 +3,19 @@
 
 #include <iostream>
 
+class Vec2
+{
+    public:
+        float x;
+        float y;
+        Vec2();
+        Vec2(float x, float y);
+        Vec2(float n);
+        float operator[](int i);
+        friend std::ostream& operator<<(std::ostream& os, Vec2 vector);
+        float dot(Vec2& vector); //dot product
+};
+
 class Vec3
 {
     public:
@@ -32,6 +45,7 @@ class Vec4
     float operator[](int i);
     friend std::ostream& operator<<(std::ostream& os, Vec4 vector);
     float dot(Vec4& vector);
+    friend Vec4 operator+(Vec4& vec1, Vec4& vec2);
 };
 
 #endif

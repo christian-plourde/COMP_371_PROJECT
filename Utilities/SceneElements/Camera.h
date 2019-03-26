@@ -1,7 +1,7 @@
 #ifndef COMP_371_PROJECT_CAMERA_H
 #define COMP_371_PROJECT_CAMERA_H
 
-#include "../Math/Vectors.h"
+#include "../Math/Matrices.h"
 
 class Camera
 {
@@ -26,6 +26,7 @@ class Camera
         inline float getAspectRatio(){return aspect_ratio;}
         int getViewHeight();
         int getViewWidth();
+        Mat4 perspective(); //returns a perspective projection matrix based on the camera's properties
 };
 
 #endif

@@ -9,6 +9,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Matrices.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.h
@@ -29,6 +30,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Matrices.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Light.h
@@ -38,7 +40,6 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Libraries/CImg.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Matrices.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.h

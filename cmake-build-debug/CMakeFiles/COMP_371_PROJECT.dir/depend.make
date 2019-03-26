@@ -8,6 +8,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj: ../Utilities/Ma
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj: ../Utilities/Math/Vectors.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj: ../Utilities/Math/Vectors.h
 
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj: ../Utilities/Math/Matrices.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj: ../Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj: ../Utilities/SceneElements/Camera.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj: ../Utilities/SceneElements/Camera.h
@@ -28,6 +29,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj: ../Utili
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj: ../Utilities/SceneElements/Sphere.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj: ../Utilities/SceneElements/Sphere.h
 
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/Math/Matrices.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneElements/Camera.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneElements/Light.h
@@ -37,7 +39,6 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/Scen
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneLoader.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneLoader.h
 
-CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Libraries/CImg.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Math/Matrices.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/Camera.h
