@@ -40,17 +40,23 @@ void RayTracer::trace(Sphere s)
     Vec3 C = s.getPosition(); //center of the sphere
     Vec3 OtoC = O-C;
     Vec3 amb_color(s.getAmbientColor().x*255, s.getAmbientColor().y*255, s.getAmbientColor().z*255);
+    float x1, x2; //these will store the solution to the quadratic equation, if there is one
 
-    std::cout << "Creating Image: " << camera.getViewWidth() << "x" << camera.getViewHeight() << std::endl;
+    std::cout << "Processing Sphere..." << std::endl;
     std::cout << "Number of rays to process: " << rays.size << std::endl;
 
     for(int i = 0; i<rays.size; i++)
     {
-        if(i != 0 && i%5000 == 0)
+        if(i != 0 && i%1000 == 0)
             std::cout << i << " rays processed." << std::endl;
 
-        float disc = discriminant(rays.getRays()[i].getRay().square(), 2*rays.getRays()[i].getRay().dot(OtoC), OtoC.square() - R*R);
-        if(disc > 0)
+        //for each ray we are going to have to solve a quadratic equation
+        //the parameters are as follows:
+        float a = rays.getRays()[i].getRay().square();
+        float b = 2*rays.getRays()[i].getRay().dot(OtoC);
+        float c = OtoC.square() - R*R;
+
+        if(quadratic_solve(a, b, c, x1, x2))
         {
             image(rays.getRays()[i].getPixel().x, rays.getRays()[i].getPixel().y, 0, 0) = amb_color.x;
             image(rays.getRays()[i].getPixel().x, rays.getRays()[i].getPixel().y, 0, 1) = amb_color.y;
@@ -58,10 +64,50 @@ void RayTracer::trace(Sphere s)
         }
     }
 
-    image.display("Scene");
+    std::cout << "Sphere Processing Complete." << std::endl;
+}
+
+bool RayTracer::quadratic_solve(float a, float b, float c, float& x1, float& x2)
+{
+    //the solutions x1 and x2 are floats that must be multiplied by the direction of the ray and added to its origin
+    //the camera position, in order to get the intersection point for the sphere
+
+    float disc = discriminant(a, b, c);
+    //if the discriminant is less than 0, this means there are no solutions and we should return false
+    if(disc < 0)
+        return false;
+
+    else if(disc == 0)
+    {
+        //if the discriminant is zero, then we should calculate the one solution which is given by -b/2a
+        //and assign to each solution and return true
+        x1, x2 = -0.5*b/a;
+        return true;
+    }
+
+    else
+    {
+        //if we are here it means that the equation has two solutions and the discriminant was positive
+        x1 = (-b + sqrt(disc))/(2*a);
+        x2 = (-b - sqrt(disc))/(2*a);
+        return true;
+    }
 }
 
 float RayTracer::discriminant(float a, float b, float c)
 {
     return b*b - 4*a*c;
+}
+
+Vec3 RayTracer::getSphereIntersection(Vec3& ray_origin, Vec3& ray_direction, float intersection_jump)
+{
+    //this calculates the intersection point for a sphere based on the ray origin, its direction and the intersection
+    //jump, which is a solution to the quadratic equation.
+    Vec3 ray_jump = ray_direction*intersection_jump;
+    return ray_origin + ray_jump;
+}
+
+void RayTracer::display_image()
+{
+    image.display("Scene");
 }

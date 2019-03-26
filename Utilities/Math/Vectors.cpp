@@ -170,6 +170,11 @@ Vec3 operator-(Vec3& vec1, Vec3& vec2)
     return Vec3(vec1.x-vec2.x, vec1.y - vec2.y, vec1.z - vec2.z);
 }
 
+Vec3 operator*(Vec3& vector, float coeff)
+{
+    return Vec3(coeff*vector.x, coeff*vector.y, coeff*vector.z);
+}
+
 float Vec3::square()
 {
     //raises the vector to the second power. This is the same as dotting with itself
