@@ -149,6 +149,87 @@ Utilities/Math/Matrices.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.s
 .PHONY : Utilities/Math/Matrices.cpp.s
 
+Utilities/Math/Ray.obj: Utilities/Math/Ray.cpp.obj
+
+.PHONY : Utilities/Math/Ray.obj
+
+# target to build an object file
+Utilities/Math/Ray.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj
+.PHONY : Utilities/Math/Ray.cpp.obj
+
+Utilities/Math/Ray.i: Utilities/Math/Ray.cpp.i
+
+.PHONY : Utilities/Math/Ray.i
+
+# target to preprocess a source file
+Utilities/Math/Ray.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.i
+.PHONY : Utilities/Math/Ray.cpp.i
+
+Utilities/Math/Ray.s: Utilities/Math/Ray.cpp.s
+
+.PHONY : Utilities/Math/Ray.s
+
+# target to generate assembly for a file
+Utilities/Math/Ray.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.s
+.PHONY : Utilities/Math/Ray.cpp.s
+
+Utilities/Math/RayContainer.obj: Utilities/Math/RayContainer.cpp.obj
+
+.PHONY : Utilities/Math/RayContainer.obj
+
+# target to build an object file
+Utilities/Math/RayContainer.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj
+.PHONY : Utilities/Math/RayContainer.cpp.obj
+
+Utilities/Math/RayContainer.i: Utilities/Math/RayContainer.cpp.i
+
+.PHONY : Utilities/Math/RayContainer.i
+
+# target to preprocess a source file
+Utilities/Math/RayContainer.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.i
+.PHONY : Utilities/Math/RayContainer.cpp.i
+
+Utilities/Math/RayContainer.s: Utilities/Math/RayContainer.cpp.s
+
+.PHONY : Utilities/Math/RayContainer.s
+
+# target to generate assembly for a file
+Utilities/Math/RayContainer.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.s
+.PHONY : Utilities/Math/RayContainer.cpp.s
+
+Utilities/Math/RayTracer.obj: Utilities/Math/RayTracer.cpp.obj
+
+.PHONY : Utilities/Math/RayTracer.obj
+
+# target to build an object file
+Utilities/Math/RayTracer.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj
+.PHONY : Utilities/Math/RayTracer.cpp.obj
+
+Utilities/Math/RayTracer.i: Utilities/Math/RayTracer.cpp.i
+
+.PHONY : Utilities/Math/RayTracer.i
+
+# target to preprocess a source file
+Utilities/Math/RayTracer.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.i
+.PHONY : Utilities/Math/RayTracer.cpp.i
+
+Utilities/Math/RayTracer.s: Utilities/Math/RayTracer.cpp.s
+
+.PHONY : Utilities/Math/RayTracer.s
+
+# target to generate assembly for a file
+Utilities/Math/RayTracer.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.s
+.PHONY : Utilities/Math/RayTracer.cpp.s
+
 Utilities/Math/Vectors.obj: Utilities/Math/Vectors.cpp.obj
 
 .PHONY : Utilities/Math/Vectors.obj
@@ -377,6 +458,15 @@ help:
 	@echo ... Utilities/Math/Matrices.obj
 	@echo ... Utilities/Math/Matrices.i
 	@echo ... Utilities/Math/Matrices.s
+	@echo ... Utilities/Math/Ray.obj
+	@echo ... Utilities/Math/Ray.i
+	@echo ... Utilities/Math/Ray.s
+	@echo ... Utilities/Math/RayContainer.obj
+	@echo ... Utilities/Math/RayContainer.i
+	@echo ... Utilities/Math/RayContainer.s
+	@echo ... Utilities/Math/RayTracer.obj
+	@echo ... Utilities/Math/RayTracer.i
+	@echo ... Utilities/Math/RayTracer.s
 	@echo ... Utilities/Math/Vectors.obj
 	@echo ... Utilities/Math/Vectors.i
 	@echo ... Utilities/Math/Vectors.s

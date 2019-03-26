@@ -5,6 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Matrices.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Ray.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayContainer.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayTracer.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Light.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.obj"

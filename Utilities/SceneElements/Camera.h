@@ -26,7 +26,6 @@ class Camera
         inline float getAspectRatio(){return aspect_ratio;}
         int getViewHeight();
         int getViewWidth();
-        Mat4 perspective(); //returns a perspective projection matrix based on the camera's properties
 };
 
 #endif

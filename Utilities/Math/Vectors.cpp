@@ -1,4 +1,5 @@
 #include "Vectors.h"
+#include <cmath>
 
 Vec2::Vec2()
 {
@@ -159,3 +160,48 @@ Vec4 operator+(Vec4& vec1, Vec4& vec2)
     return Vec4(vec1.x + vec2.x, vec1.y + vec2.y, vec1.z + vec2.z, vec1.w + vec2.w);
 }
 
+Vec3 operator+(Vec3& vec1, Vec3& vec2)
+{
+    return Vec3(vec1.x+vec2.x, vec1.y + vec2.y, vec1.z+vec2.z);
+}
+
+Vec3 operator-(Vec3& vec1, Vec3& vec2)
+{
+    return Vec3(vec1.x-vec2.x, vec1.y - vec2.y, vec1.z - vec2.z);
+}
+
+float Vec3::square()
+{
+    //raises the vector to the second power. This is the same as dotting with itself
+    return this->dot(*this);
+}
+
+void Vec2::normalize()
+{
+    //to normalize the vector we must first take the sum of squares of all its elements
+    float sum_squares = x*x + y*y;
+    //then we divide each element by the sqrt of the sum_squares
+    x = x/sqrt(sum_squares);
+    y = y/sqrt(sum_squares);
+}
+
+void Vec3::normalize()
+{
+    //to normalize the vector we must first take the sum of squares of all its elements
+    float sum_squares = x*x + y*y + z*z;
+    //then we divide each element by the sqrt of the sum_squares
+    x = x/sqrt(sum_squares);
+    y = y/sqrt(sum_squares);
+    z = z/sqrt(sum_squares);
+}
+
+void Vec4::normalize()
+{
+    //to normalize the vector we must first take the sum of squares of all its elements
+    float sum_squares = x*x + y*y + z*z + w*w;
+    //then we divide each element by the sqrt of the sum_squares
+    x = x/sqrt(sum_squares);
+    y = y/sqrt(sum_squares);
+    z = z/sqrt(sum_squares);
+    w = w/sqrt(sum_squares);
+}
