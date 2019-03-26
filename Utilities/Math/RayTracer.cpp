@@ -2,15 +2,15 @@
 
 RayTracer::RayTracer(Camera c)
 {
-    image = cimg_library::CImg<unsigned char>(300, 300, 1, 3);
-    image.fill(0);
-
     camera = c;
     //now we need to add the rays to our ray container
     //we need to do this for each pixel that the camera can see.
     //therefore we need the view width and height of the camera
-    int view_width = 300;
-    int view_height = 300;
+    int view_width = camera.getViewWidth();
+    int view_height = camera.getViewHeight();
+
+    image = cimg_library::CImg<unsigned char>(view_width, view_height, 1, 3);
+    image.fill(0);
 
     //the top left corner of the camera view is at x = -view_width/2 and y = view_height/2
 
@@ -19,7 +19,7 @@ RayTracer::RayTracer(Camera c)
         for(int y = 0; y < view_height; y++)
         {
             //iterate over each "pixel" that the camera can see and set the ray for that pixel
-            rays.addRay(Vec3(x-view_width/2, y+view_height/2, camera.getFocalLength()), Pixel(x, y));
+            rays.addRay(Vec3(x-view_width/2, view_height/2 - y, camera.getFocalLength()), Pixel(x, y));
         }
     }
 }
@@ -39,19 +39,22 @@ void RayTracer::trace(Sphere s)
     float R = s.getRadius();
     Vec3 C = s.getPosition(); //center of the sphere
     Vec3 OtoC = O-C;
+    Vec3 amb_color(s.getAmbientColor().x*255, s.getAmbientColor().y*255, s.getAmbientColor().z*255);
+
+    std::cout << "Creating Image: " << camera.getViewWidth() << "x" << camera.getViewHeight() << std::endl;
+    std::cout << "Number of rays to process: " << rays.size << std::endl;
 
     for(int i = 0; i<rays.size; i++)
     {
-        //for each ray we need to get the discriminant for the quadratic equation and check it's sign
-        Vec3 D = rays.getRays()[i].getRay();
+        if(i != 0 && i%5000 == 0)
+            std::cout << i << " rays processed." << std::endl;
 
-        float disc = discriminant(D.square(), 2*D.dot(OtoC), (OtoC).square()-R*R);
-
-        std::cout << "Ray " << i + 1 << " of " << rays.size <<  " Discriminant: " << disc << std::endl;
-
+        float disc = discriminant(rays.getRays()[i].getRay().square(), 2*rays.getRays()[i].getRay().dot(OtoC), OtoC.square() - R*R);
         if(disc > 0)
         {
-            image(rays.getRays()[i].getPixel().x, rays.getRays()[i].getPixel().y, 0, 0) = 255;
+            image(rays.getRays()[i].getPixel().x, rays.getRays()[i].getPixel().y, 0, 0) = amb_color.x;
+            image(rays.getRays()[i].getPixel().x, rays.getRays()[i].getPixel().y, 0, 1) = amb_color.y;
+            image(rays.getRays()[i].getPixel().x, rays.getRays()[i].getPixel().y, 0, 2) = amb_color.z;
         }
     }
 
