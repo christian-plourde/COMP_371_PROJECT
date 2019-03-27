@@ -41,6 +41,9 @@ void RayTracer::trace(Sphere s)
     Vec3 OtoC = O-C;
     Vec3 amb_color(s.getAmbientColor().x*255, s.getAmbientColor().y*255, s.getAmbientColor().z*255);
     float x1, x2; //these will store the solution to the quadratic equation, if there is one
+    float a = 0;
+    float b = 0;
+    float c = 0; //these are the parameters for the quadratic equation we will be solving
 
     std::cout << "Processing Sphere..." << std::endl;
     std::cout << "Number of rays to process: " << rays.size << std::endl;
@@ -52,9 +55,9 @@ void RayTracer::trace(Sphere s)
 
         //for each ray we are going to have to solve a quadratic equation
         //the parameters are as follows:
-        float a = rays.getRays()[i].getRay().square();
-        float b = 2*rays.getRays()[i].getRay().dot(OtoC);
-        float c = OtoC.square() - R*R;
+        a = rays.getRays()[i].getRay().square();
+        b = 2*rays.getRays()[i].getRay().dot(OtoC);
+        c = OtoC.square() - R*R;
 
         if(quadratic_solve(a, b, c, x1, x2))
         {
