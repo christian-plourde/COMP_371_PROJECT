@@ -6,7 +6,7 @@ int main()
 {
     SceneLoader loader;
 
-    loader.setFilePath("../scenes/scene1.txt");
+    loader.setFilePath("../scenes/scene2.txt");
     loader.loadScene();
 
     RayTracer tracer(loader.getCamera());

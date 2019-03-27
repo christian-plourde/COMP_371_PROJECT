@@ -58,6 +58,12 @@ void RayTracer::trace(Sphere s)
             {
                 //if we have a solution, we need to compute the lighting for that point
                 //this needs to be done for every light in our vector of lights
+
+                //the three color channels
+                float red = 0;
+                float green = 0;
+                float blue = 0;
+
                 for(int l = 0; l < lights.size(); l++)
                 {
                     //for each light we need to get the direction from the light to the intersection points
@@ -81,20 +87,30 @@ void RayTracer::trace(Sphere s)
                     float diffuse_strength = light_direction.dot(normal);
                     clamp(diffuse_strength, 0, 1);
 
+                    //the next step is to calculate the specular strength
+                    //in order to do this, we need to take the dot of the reflected light vector about the normal
+                    //and the view vector, which is the ray direction and raise it to the shininess
+                    Vec3 reflection = light_direction.reflect(normal);
+                    reflection.normalize();
+                    ray_direction.normalize();
+                    float spec_strength = ray_direction.dot(reflection);
+                    clamp(spec_strength, 0, 1);
+                    spec_strength = pow(spec_strength, s.getShininess());
+
                     //now we calculate the color of the pixel
-                    float red = s.getAmbientColor().x + diffuse_strength*s.getDiffuseColor().x;
-                    float green = s.getAmbientColor().y + diffuse_strength*s.getDiffuseColor().y;
-                    float blue = s.getAmbientColor().z + diffuse_strength*s.getDiffuseColor().z;
+                    red += s.getAmbientColor().x + diffuse_strength*s.getDiffuseColor().x + spec_strength*s.getSpecularColor().x;
+                    green += s.getAmbientColor().y + diffuse_strength*s.getDiffuseColor().y + spec_strength*s.getSpecularColor().y;
+                    blue += s.getAmbientColor().z + diffuse_strength*s.getDiffuseColor().z + spec_strength*s.getSpecularColor().z;
 
                     //before proceeding make sure that the values are not greater than 1
                     clamp(red, 0, 1);
                     clamp(green, 0, 1);
                     clamp(blue, 0, 1);
-
-                    image(ray.getPixel().x, ray.getPixel().y, 0, 0) = red*255;
-                    image(ray.getPixel().x, ray.getPixel().y, 0, 1) = green*255;
-                    image(ray.getPixel().x, ray.getPixel().y, 0, 2) = blue*255;
                 }
+
+                image(ray.getPixel().x, ray.getPixel().y, 0, 0) = red*255;
+                image(ray.getPixel().x, ray.getPixel().y, 0, 1) = green*255;
+                image(ray.getPixel().x, ray.getPixel().y, 0, 2) = blue*255;
             }
         }
     }
@@ -228,6 +244,13 @@ void RayTracer::save_image(const char *filepath)
 
 void RayTracer::clamp(float& f, float low_bound, float high_bound)
 {
+    //check for NaN
+    if(f != f)
+    {
+        f = 0;
+        return;
+    }
+
     if(f < low_bound)
         f = low_bound;
 

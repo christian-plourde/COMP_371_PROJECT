@@ -33,6 +33,7 @@ class Vec3
         friend Vec3 operator-(Vec3& vec1, Vec3& vec2);
         friend Vec3 operator*(Vec3& vector, float coeff);
         float length();
+        Vec3 reflect(Vec3 normal); //reflects a light vector about a normal vector
         float square();
         float dot(Vec3& vector); //dot product
         void normalize(); //normalizes the vector

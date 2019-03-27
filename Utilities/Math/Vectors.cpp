@@ -215,3 +215,10 @@ void Vec4::normalize()
     z = z/sqrt(sum_squares);
     w = w/sqrt(sum_squares);
 }
+
+Vec3 Vec3::reflect(Vec3 normal)
+{
+    Vec3 n_2 = normal*2;
+    Vec3 temp = n_2*(normal.dot(*this));
+    return *this - temp;
+}
