@@ -2,6 +2,10 @@
 
 RayTracer::RayTracer(Camera c)
 {
+    ambient_coefficient = 0.6;
+    diffuse_coefficient = 0.8;
+    specular_coefficient = 0.5;
+
     camera = c;
     //now we need to add the rays to our ray container
     //we need to do this for each pixel that the camera can see.
@@ -28,7 +32,6 @@ void RayTracer::trace(Sphere s)
     float R = s.getRadius();
     Vec3 C = s.getPosition(); //center of the sphere
     Vec3 OtoC = O-C;
-    Vec3 amb_color(s.getAmbientColor().x*255, s.getAmbientColor().y*255, s.getAmbientColor().z*255);
     float x1, x2; //these will store the solution to the quadratic equation, if there is one
     float a = 0;
     float b = 0;
@@ -98,9 +101,15 @@ void RayTracer::trace(Sphere s)
                     spec_strength = pow(spec_strength, s.getShininess());
 
                     //now we calculate the color of the pixel
-                    red += s.getAmbientColor().x + diffuse_strength*s.getDiffuseColor().x + spec_strength*s.getSpecularColor().x;
-                    green += s.getAmbientColor().y + diffuse_strength*s.getDiffuseColor().y + spec_strength*s.getSpecularColor().y;
-                    blue += s.getAmbientColor().z + diffuse_strength*s.getDiffuseColor().z + spec_strength*s.getSpecularColor().z;
+                    red += ambient_coefficient*s.getAmbientColor().x
+                            + diffuse_coefficient*diffuse_strength*s.getDiffuseColor().x
+                            + specular_coefficient*spec_strength*s.getSpecularColor().x;
+                    green += ambient_coefficient*s.getAmbientColor().y
+                           + diffuse_coefficient*diffuse_strength*s.getDiffuseColor().y
+                           + specular_coefficient*spec_strength*s.getSpecularColor().y;
+                    blue += ambient_coefficient*s.getAmbientColor().z
+                           + diffuse_coefficient*diffuse_strength*s.getDiffuseColor().z
+                           + specular_coefficient*spec_strength*s.getSpecularColor().z;
 
                     //before proceeding make sure that the values are not greater than 1
                     clamp(red, 0, 1);
@@ -155,9 +164,66 @@ void RayTracer::trace(Plane p)
 
             if(plane_solve(camera.getPosition(), ray_direction, p, t))
             {
-                image(ray.getPixel().x, ray.getPixel().y, 0, 0) = p.getAmbientColor().x*255;
-                image(ray.getPixel().x, ray.getPixel().y, 0, 1) = p.getAmbientColor().y*255;
-                image(ray.getPixel().x, ray.getPixel().y, 0, 2) = p.getAmbientColor().z*255;
+                //if we have a solution, we need to compute the lighting for that point
+                //this needs to be done for every light in our vector of lights
+
+                //the three color channels
+                float red = 0;
+                float green = 0;
+                float blue = 0;
+
+                for(int l = 0; l < lights.size(); l++)
+                {
+                    //for each light we need to get the direction from the light to the intersection points
+                    //in order to do this, we first need to find those intersection points
+                    Vec3 intersection_point = getPlaneIntersection(camera.getPosition(), ray_direction, t);
+
+                    //we only want to keep the closest intersection point so we don't draw for no reason
+                    //now that we have the intersection points, we need to compute the normals at this point
+                    //for the sphere, this is done by taking the difference between the point and the center of the
+                    //sphere and then normalizing it
+                    Vec3 normal = p.getNormal();
+                    normal.normalize();
+
+                    //now we need to calculate the diffuse strength for each of these points
+                    //the diffuse strength is the dot product of the light direction and the surface normal
+                    //if the light direction is parallel to the normal this is highest intensity = 1
+                    //if it is perpendicular then the intensity is 0
+                    Vec3 light_direction = lights[l].getPosition() - intersection_point;
+                    light_direction.normalize();
+                    float diffuse_strength = light_direction.dot(normal);
+                    clamp(diffuse_strength, 0, 1);
+
+                    //the next step is to calculate the specular strength
+                    //in order to do this, we need to take the dot of the reflected light vector about the normal
+                    //and the view vector, which is the ray direction and raise it to the shininess
+                    Vec3 reflection = light_direction.reflect(normal);
+                    reflection.normalize();
+                    ray_direction.normalize();
+                    float spec_strength = ray_direction.dot(reflection);
+                    clamp(spec_strength, 0, 1);
+                    spec_strength = pow(spec_strength, p.getShininess());
+
+                    //now we calculate the color of the pixel
+                    red += ambient_coefficient*p.getAmbientColor().x
+                           + diffuse_coefficient*diffuse_strength*p.getDiffuseColor().x
+                           + specular_coefficient*spec_strength*p.getSpecularColor().x;
+                    green += ambient_coefficient*p.getAmbientColor().y
+                             + diffuse_coefficient*diffuse_strength*p.getDiffuseColor().y
+                             + specular_coefficient*spec_strength*p.getSpecularColor().y;
+                    blue += ambient_coefficient*p.getAmbientColor().z
+                            + diffuse_coefficient*diffuse_strength*p.getDiffuseColor().z
+                            + specular_coefficient*spec_strength*p.getSpecularColor().z;
+
+                    //before proceeding make sure that the values are not greater than 1
+                    clamp(red, 0, 1);
+                    clamp(green, 0, 1);
+                    clamp(blue, 0, 1);
+                }
+
+                image(ray.getPixel().x, ray.getPixel().y, 0, 0) = red*255;
+                image(ray.getPixel().x, ray.getPixel().y, 0, 1) = green*255;
+                image(ray.getPixel().x, ray.getPixel().y, 0, 2) = blue*255;
             }
         }
     }
@@ -228,6 +294,12 @@ Vec3 RayTracer::getSphereIntersection(Vec3& ray_origin, Vec3& ray_direction, flo
 {
     //this calculates the intersection point for a sphere based on the ray origin, its direction and the intersection
     //jump, which is a solution to the quadratic equation.
+    Vec3 ray_jump = ray_direction*intersection_jump;
+    return ray_origin + ray_jump;
+}
+
+Vec3 RayTracer::getPlaneIntersection(Vec3& ray_origin, Vec3& ray_direction, float intersection_jump)
+{
     Vec3 ray_jump = ray_direction*intersection_jump;
     return ray_origin + ray_jump;
 }

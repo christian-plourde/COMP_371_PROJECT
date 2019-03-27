@@ -20,6 +20,10 @@ class RayTracer
         //gets stored in x1 and x2)
         bool plane_solve(Vec3& ray_origin, Vec3& ray_direction, Plane& plane, float& t);
         Vec3 getSphereIntersection(Vec3& ray_origin, Vec3& ray_direction, float intersection_jump);
+        Vec3 getPlaneIntersection(Vec3& ray_origin, Vec3& ray_direction, float intersection_jump);
+        float ambient_coefficient;
+        float specular_coefficient;
+        float diffuse_coefficient;
 
     public:
         RayTracer(Camera c);
