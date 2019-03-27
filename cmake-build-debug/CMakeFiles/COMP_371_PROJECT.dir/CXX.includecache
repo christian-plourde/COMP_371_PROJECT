@@ -122,14 +122,6 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/
 Vectors.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
 
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayContainer.h
-vector
--
-Vectors.h
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
-Ray.h
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Ray.h
-
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayTracer.cpp
 RayTracer.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayTracer.h
@@ -137,12 +129,18 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayTracer.h
 ../SceneElements/Camera.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.h
-RayContainer.h
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayContainer.h
 ../SceneElements/Sphere.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.h
+../SceneElements/Plane.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.h
+../SceneElements/Light.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Light.h
 ../../Libraries/CImg.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Libraries/CImg.h
+Ray.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Ray.h
+vector
+-
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
 iostream
@@ -151,6 +149,14 @@ iostream
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.h
 ../Math/Matrices.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Matrices.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Light.h
+../Math/Vectors.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.h
+../Math/Vectors.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.h
 ../Math/Vectors.h

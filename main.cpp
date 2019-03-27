@@ -9,10 +9,13 @@ int main()
     loader.setFilePath("../scenes/scene1.txt");
     loader.loadScene();
 
-    RayTracer tracer(loader.getCamera()); //doing this will add all the rays that we need
-
-    tracer.trace(loader.getSpheres()[0]);
+    RayTracer tracer(loader.getCamera());
+    tracer.setLights(loader.getLights());
+    tracer.trace(loader.getPlane());
+    for(int i = 0; i<loader.getSpheres().size(); i++)
+    {
+        tracer.trace(loader.getSpheres()[i]);
+    }
     tracer.display_image();
-
     return 0;
 }

@@ -19,6 +19,7 @@ class SceneLoader
         int object_count;
         const char* filename;
         void print_data();
+        bool contains_mesh; //this is to indicate if there is a mesh in the scene or not so we don't draw it unnecessarily
 
     public:
         SceneLoader();

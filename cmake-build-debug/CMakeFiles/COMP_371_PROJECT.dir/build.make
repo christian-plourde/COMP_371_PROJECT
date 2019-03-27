@@ -186,22 +186,9 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\RayTracer.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\RayTracer.cpp.s
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj: ../Utilities/Math/RayContainer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\RayContainer.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\RayContainer.cpp"
-
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\RayContainer.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\RayContainer.cpp.i
-
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\RayContainer.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\RayContainer.cpp.s
-
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj: ../Utilities/Math/Ray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\Ray.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\Ray.cpp"
 
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.i: cmake_force
@@ -224,7 +211,6 @@ COMP_371_PROJECT_OBJECTS = \
 "CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj" \
 "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj" \
 "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj" \
-"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj" \
 "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj"
 
 # External object files for target COMP_371_PROJECT
@@ -240,13 +226,12 @@ COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Li
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj
-COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/build.make
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/linklibs.rsp
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/objects1.rsp
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable COMP_371_PROJECT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable COMP_371_PROJECT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\COMP_371_PROJECT.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

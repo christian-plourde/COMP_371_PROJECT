@@ -175,6 +175,11 @@ Vec3 operator*(Vec3& vector, float coeff)
     return Vec3(coeff*vector.x, coeff*vector.y, coeff*vector.z);
 }
 
+float Vec3::length()
+{
+    return sqrt(x*x + y*y + z*z);
+}
+
 float Vec3::square()
 {
     //raises the vector to the second power. This is the same as dotting with itself

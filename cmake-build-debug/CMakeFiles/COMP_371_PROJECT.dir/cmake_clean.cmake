@@ -9,7 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj"
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj"
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj"
-  "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj"
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj"
   "COMP_371_PROJECT.pdb"
   "COMP_371_PROJECT.exe"

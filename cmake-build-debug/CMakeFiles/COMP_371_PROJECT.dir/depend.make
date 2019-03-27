@@ -9,19 +9,15 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj: ../Utilities/Math/Ra
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj: ../Utilities/Math/Ray.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj: ../Utilities/Math/Vectors.h
 
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj: ../Utilities/Math/Ray.h
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj: ../Utilities/Math/RayContainer.cpp
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj: ../Utilities/Math/RayContainer.h
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayContainer.cpp.obj: ../Utilities/Math/Vectors.h
-
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Libraries/CImg.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/Math/Matrices.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/Math/Ray.h
-CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/Math/RayContainer.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/Math/RayTracer.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/Math/RayTracer.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/SceneElements/Camera.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/SceneElements/Light.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/SceneElements/Plane.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/SceneElements/Sphere.h
 
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj: ../Utilities/Math/Vectors.cpp
@@ -61,7 +57,6 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/Scen
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Libraries/CImg.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Math/Matrices.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Math/Ray.h
-CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Math/RayContainer.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Math/RayTracer.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/Camera.h

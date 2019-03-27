@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 
-SceneLoader::SceneLoader() {object_count = 0;}
+SceneLoader::SceneLoader() {object_count = 0; contains_mesh = false;}
 
 SceneLoader::~SceneLoader() {}
 
@@ -125,6 +125,9 @@ bool SceneLoader::loadScene()
             //next we need to look for a mesh
             if(line.find("mesh") != std::string::npos && line.length() != 0)
             {
+                //first set contains_mesh to true
+                contains_mesh = true;
+
                 //if we have found a mesh, we have five lines to read
                 for(int i = 0; i<5; i++)
                 {
@@ -285,6 +288,7 @@ bool SceneLoader::loadScene()
 
         //make sure input is closed before returning
         input.close();
+        print_data();
         return true;
     }
 
@@ -305,11 +309,14 @@ void SceneLoader::print_data()
     std::cout << "Plane diffuse color: " << plane.getDiffuseColor() << std::endl;
     std::cout << "Plane specular color: " << plane.getSpecularColor() << std::endl;
     std::cout << "Plane shininess: " << plane.getShininess() << std::endl;
-    std::cout << "Mesh filepath: " << mesh.getFileName() << std::endl;
-    std::cout << "Mesh ambient color: " << mesh.getAmbientColor() << std::endl;
-    std::cout << "Mesh diffuse color: " << mesh.getDiffuseColor() << std::endl;
-    std::cout << "Mesh specular color: " << mesh.getSpecularColor() << std::endl;
-    std::cout << "Mesh shininess: " << mesh.getShininess() << std::endl;
+    if(contains_mesh)
+    {
+        std::cout << "Mesh filepath: " << mesh.getFileName() << std::endl;
+        std::cout << "Mesh ambient color: " << mesh.getAmbientColor() << std::endl;
+        std::cout << "Mesh diffuse color: " << mesh.getDiffuseColor() << std::endl;
+        std::cout << "Mesh specular color: " << mesh.getSpecularColor() << std::endl;
+        std::cout << "Mesh shininess: " << mesh.getShininess() << std::endl;
+    }
     for(int i = 0; i<spheres.size(); i++)
     {
         std::cout << "Sphere " << i << " position: " << spheres[i].getPosition() << std::endl;
