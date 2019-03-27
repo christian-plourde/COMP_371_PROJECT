@@ -79,13 +79,17 @@ void RayTracer::trace(Sphere s)
                     Vec3 light_direction = lights[l].getPosition() - intersection_point;
                     light_direction.normalize();
                     float diffuse_strength = light_direction.dot(normal);
-                    if(diffuse_strength < 0) //this is to make sure that the values are between 0 and 1
-                        diffuse_strength = 0;
+                    clamp(diffuse_strength, 0, 1);
 
-                    //now that we have the diffuse strength, we need to calculate the color of the pixel
-                    float red = 0.3*s.getAmbientColor().x + diffuse_strength*s.getDiffuseColor().x;
-                    float green = 0.3*s.getAmbientColor().y + diffuse_strength*s.getDiffuseColor().y;
-                    float blue = 0.3*s.getAmbientColor().z + diffuse_strength*s.getDiffuseColor().z;
+                    //now we calculate the color of the pixel
+                    float red = s.getAmbientColor().x + diffuse_strength*s.getDiffuseColor().x;
+                    float green = s.getAmbientColor().y + diffuse_strength*s.getDiffuseColor().y;
+                    float blue = s.getAmbientColor().z + diffuse_strength*s.getDiffuseColor().z;
+
+                    //before proceeding make sure that the values are not greater than 1
+                    clamp(red, 0, 1);
+                    clamp(green, 0, 1);
+                    clamp(blue, 0, 1);
 
                     image(ray.getPixel().x, ray.getPixel().y, 0, 0) = red*255;
                     image(ray.getPixel().x, ray.getPixel().y, 0, 1) = green*255;
@@ -220,4 +224,13 @@ void RayTracer::display_image()
 void RayTracer::save_image(const char *filepath)
 {
     image.save(filepath);
+}
+
+void RayTracer::clamp(float& f, float low_bound, float high_bound)
+{
+    if(f < low_bound)
+        f = low_bound;
+
+    if(f > high_bound)
+        f = high_bound;
 }

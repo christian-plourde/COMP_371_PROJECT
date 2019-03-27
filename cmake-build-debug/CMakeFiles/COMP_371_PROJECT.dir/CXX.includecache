@@ -154,6 +154,10 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/
 ../Math/Vectors.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
 
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Mesh.h
+../Math/Vectors.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
+
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.h
 ../Math/Vectors.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
@@ -161,4 +165,26 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.h
 ../Math/Vectors.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
+vector
+-
+SceneElements/Camera.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.h
+SceneElements/Light.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Light.h
+SceneElements/Mesh.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Mesh.h
+SceneElements/Plane.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.h
+SceneElements/Sphere.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/main.cpp
+iostream
+-
+Utilities/SceneLoader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
+Utilities/Math/RayTracer.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayTracer.h
 
