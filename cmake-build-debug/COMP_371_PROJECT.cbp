@@ -128,6 +128,12 @@
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.h">
 			<Option target="COMP_371_PROJECT"/>
 		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.cpp">
+			<Option target="COMP_371_PROJECT"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h">
+			<Option target="COMP_371_PROJECT"/>
+		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.cpp">
 			<Option target="COMP_371_PROJECT"/>
 		</Unit>

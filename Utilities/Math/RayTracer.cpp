@@ -2,9 +2,9 @@
 
 RayTracer::RayTracer(Camera c)
 {
-    ambient_coefficient = 0.6;
-    diffuse_coefficient = 0.8;
-    specular_coefficient = 0.5;
+    ambient_coefficient = 0.7;
+    diffuse_coefficient = 0.4;
+    specular_coefficient = 0.2;
 
     camera = c;
     //now we need to add the rays to our ray container
@@ -15,6 +15,14 @@ RayTracer::RayTracer(Camera c)
 
     image = cimg_library::CImg<unsigned char>(view_width, view_height, 1, 3);
     image.fill(0);
+}
+
+void RayTracer::trace(SceneObject* o)
+{
+    if(dynamic_cast<Sphere*>(o))
+        trace(*(dynamic_cast<Sphere*>(o)));
+    if(dynamic_cast<Plane*>(o))
+        trace(*(dynamic_cast<Plane*>(o)));
 }
 
 void RayTracer::trace(Sphere s)

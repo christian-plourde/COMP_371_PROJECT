@@ -288,7 +288,7 @@ bool SceneLoader::loadScene()
 
         //make sure input is closed before returning
         input.close();
-        print_data();
+        //print_data();
         return true;
     }
 
@@ -334,4 +334,15 @@ void SceneLoader::print_data()
         std::cout << "Light " << i << " diffuse color: " << lights[i].getDiffuseColor() << std::endl;
         std::cout << "Light " << i << " specular color: " << lights[i].getSpecularColor() << std::endl;
     }
+}
+
+std::vector<SceneObject*> SceneLoader::getAllObjects()
+{
+    std::vector<SceneObject*> toReturn;
+    toReturn.push_back(&plane);
+    for(int i = 0; i < spheres.size(); i++)
+    {
+        toReturn.push_back(&(spheres[i]));
+    }
+    return toReturn;
 }

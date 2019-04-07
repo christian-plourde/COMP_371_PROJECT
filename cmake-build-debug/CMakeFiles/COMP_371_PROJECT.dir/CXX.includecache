@@ -155,12 +155,16 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.h
+SceneObject.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h
 ../Math/Vectors.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.h
-../Math/Vectors.h
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
+SceneObject.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
 vector

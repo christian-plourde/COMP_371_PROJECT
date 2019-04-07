@@ -18,6 +18,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/M
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/SceneElements/Camera.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/SceneElements/Light.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/SceneElements/Plane.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/SceneElements/SceneObject.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj: ../Utilities/SceneElements/Sphere.h
 
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj: ../Utilities/Math/Vectors.cpp
@@ -39,8 +40,14 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj: ../Utiliti
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj: ../Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj: ../Utilities/SceneElements/Plane.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj: ../Utilities/SceneElements/Plane.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj: ../Utilities/SceneElements/SceneObject.h
+
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/SceneObject.cpp.obj: ../Utilities/Math/Vectors.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/SceneObject.cpp.obj: ../Utilities/SceneElements/SceneObject.cpp
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/SceneObject.cpp.obj: ../Utilities/SceneElements/SceneObject.h
 
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj: ../Utilities/Math/Vectors.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj: ../Utilities/SceneElements/SceneObject.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj: ../Utilities/SceneElements/Sphere.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj: ../Utilities/SceneElements/Sphere.h
 
@@ -50,6 +57,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/Scen
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneElements/Light.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneElements/Mesh.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneElements/Plane.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneElements/SceneObject.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneElements/Sphere.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneLoader.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj: ../Utilities/SceneLoader.h
@@ -63,6 +71,7 @@ CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/Camera.
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/Light.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/Mesh.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/Plane.h
+CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/SceneObject.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/Sphere.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneLoader.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../main.cpp

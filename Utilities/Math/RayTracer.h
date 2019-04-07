@@ -32,10 +32,10 @@ class RayTracer
         inline void setLights(std::vector<Light> l){lights = l;}
         void display_image();
         void save_image(const char* filepath);
+        void trace(SceneObject* s);
         void trace(Sphere s); //will do ray tracing for that sphere
         void trace(Plane p); //will do ray tracing for a plane
         void clamp(float& f, float low_bound, float high_bound); //clamps the float value passed between the low and high bounds
-
 };
 
 #endif

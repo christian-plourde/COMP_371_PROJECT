@@ -19,6 +19,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Light.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.cpp
@@ -40,8 +41,14 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/SceneObject.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Sphere.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj
@@ -51,6 +58,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneLoader.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Light.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Mesh.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
@@ -64,6 +72,7 @@ CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Light.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Mesh.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Plane.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Sphere.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneLoader.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/main.cpp

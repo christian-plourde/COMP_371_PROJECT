@@ -338,6 +338,33 @@ Utilities/SceneElements/Plane.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.s
 .PHONY : Utilities/SceneElements/Plane.cpp.s
 
+Utilities/SceneElements/SceneObject.obj: Utilities/SceneElements/SceneObject.cpp.obj
+
+.PHONY : Utilities/SceneElements/SceneObject.obj
+
+# target to build an object file
+Utilities/SceneElements/SceneObject.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/SceneObject.cpp.obj
+.PHONY : Utilities/SceneElements/SceneObject.cpp.obj
+
+Utilities/SceneElements/SceneObject.i: Utilities/SceneElements/SceneObject.cpp.i
+
+.PHONY : Utilities/SceneElements/SceneObject.i
+
+# target to preprocess a source file
+Utilities/SceneElements/SceneObject.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/SceneObject.cpp.i
+.PHONY : Utilities/SceneElements/SceneObject.cpp.i
+
+Utilities/SceneElements/SceneObject.s: Utilities/SceneElements/SceneObject.cpp.s
+
+.PHONY : Utilities/SceneElements/SceneObject.s
+
+# target to generate assembly for a file
+Utilities/SceneElements/SceneObject.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/SceneObject.cpp.s
+.PHONY : Utilities/SceneElements/SceneObject.cpp.s
+
 Utilities/SceneElements/Sphere.obj: Utilities/SceneElements/Sphere.cpp.obj
 
 .PHONY : Utilities/SceneElements/Sphere.obj
@@ -452,6 +479,9 @@ help:
 	@echo ... Utilities/SceneElements/Plane.obj
 	@echo ... Utilities/SceneElements/Plane.i
 	@echo ... Utilities/SceneElements/Plane.s
+	@echo ... Utilities/SceneElements/SceneObject.obj
+	@echo ... Utilities/SceneElements/SceneObject.i
+	@echo ... Utilities/SceneElements/SceneObject.s
 	@echo ... Utilities/SceneElements/Sphere.obj
 	@echo ... Utilities/SceneElements/Sphere.i
 	@echo ... Utilities/SceneElements/Sphere.s

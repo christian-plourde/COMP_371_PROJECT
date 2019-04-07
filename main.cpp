@@ -8,14 +8,15 @@ int main()
 
     loader.setFilePath("../scenes/scene1.txt");
     loader.loadScene();
-
     RayTracer tracer(loader.getCamera());
     tracer.setLights(loader.getLights());
-    tracer.trace(loader.getPlane());
-    for(int i = 0; i<loader.getSpheres().size(); i++)
+
+    std::vector<SceneObject*> objects = loader.getAllObjects();
+    for(int t = 0; t<objects.size(); t++)
     {
-        tracer.trace(loader.getSpheres()[i]);
+        tracer.trace(objects[t]);
     }
+
     tracer.display_image();
     //tracer.save_image("../Images/scene2.bmp");
     return 0;

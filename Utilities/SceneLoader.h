@@ -32,6 +32,7 @@ class SceneLoader
         inline Plane& getPlane(){return plane;}
         inline std::vector<Sphere>& getSpheres(){return spheres;}
         inline std::vector<Light>& getLights(){return lights;}
+        std::vector<SceneObject*> getAllObjects();
 };
 
 #endif
