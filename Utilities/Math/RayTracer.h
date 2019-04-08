@@ -24,6 +24,10 @@ class RayTracer
         float ambient_coefficient;
         float specular_coefficient;
         float diffuse_coefficient;
+        std::vector<SceneObject*> scene_objects;
+        Plane plane;
+        bool isPlane(SceneObject* o);
+        bool isSphere(SceneObject* o);
 
     public:
         RayTracer(Camera c);
@@ -32,7 +36,7 @@ class RayTracer
         inline void setLights(std::vector<Light> l){lights = l;}
         void display_image();
         void save_image(const char* filepath);
-        void trace(SceneObject* s);
+        void trace(std::vector<SceneObject*> s);
         void trace(Sphere s); //will do ray tracing for that sphere
         void trace(Plane p); //will do ray tracing for a plane
         void clamp(float& f, float low_bound, float high_bound); //clamps the float value passed between the low and high bounds

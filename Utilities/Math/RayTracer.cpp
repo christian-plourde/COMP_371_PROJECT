@@ -17,12 +17,21 @@ RayTracer::RayTracer(Camera c)
     image.fill(0);
 }
 
-void RayTracer::trace(SceneObject* o)
+void RayTracer::trace(std::vector<SceneObject*> s)
 {
-    if(dynamic_cast<Sphere*>(o))
-        trace(*(dynamic_cast<Sphere*>(o)));
-    if(dynamic_cast<Plane*>(o))
-        trace(*(dynamic_cast<Plane*>(o)));
+    scene_objects = s;
+
+    for(int i = 0; i < s.size(); i++)
+    {
+        if(isSphere(s[i]))
+            trace(*(dynamic_cast<Sphere*>(s[i])));
+        if(isPlane(s[i]))
+        {
+            plane = *(dynamic_cast<Plane*>(s[i]));
+            trace(*(dynamic_cast<Plane*>(s[i])));
+        }
+
+    }
 }
 
 void RayTracer::trace(Sphere s)
@@ -51,6 +60,8 @@ void RayTracer::trace(Sphere s)
     int view_height = camera.getViewHeight();
 
     Ray ray;
+    Vec3 normal;
+    Vec3 intersection_point;
 
     for(int x = 0; x < view_width; x++)
     {
@@ -80,13 +91,13 @@ void RayTracer::trace(Sphere s)
                     //for each light we need to get the direction from the light to the intersection points
                     //in order to do this, we first need to find those intersection points
                     Vec3 ray_direction = ray.getRay();
-                    Vec3 intersection_point = getSphereIntersection(camera.getPosition(), ray_direction, x1);
+                    intersection_point = getSphereIntersection(camera.getPosition(), ray_direction, x1);
 
                     //we only want to keep the closest intersection point so we don't draw for no reason
                     //now that we have the intersection points, we need to compute the normals at this point
                     //for the sphere, this is done by taking the difference between the point and the center of the
                     //sphere and then normalizing it
-                    Vec3 normal = intersection_point - s.getPosition();
+                    normal = intersection_point - s.getPosition();
                     normal.normalize();
 
                     //now we need to calculate the diffuse strength for each of these points
@@ -223,6 +234,36 @@ void RayTracer::trace(Plane p)
                             + diffuse_coefficient*diffuse_strength*p.getDiffuseColor().z
                             + specular_coefficient*spec_strength*p.getSpecularColor().z;
 
+                    //now that we have computed the colors from the lighting we need to check if this pixel should be
+                    //in shadow. This will be the case if there is another object between it and the light.
+                    //therefore we need to iterate through each of the other objects and see if there is an
+                    //intersection between the shadow ray (a vector connection our computed intersection_point
+                    //and the light) and that object. If there is, then this pixel should be in shadow
+                    for(int i = 0; i < scene_objects.size(); i++)
+                    {
+                        //for each object first construct the shadow ray
+                        Vec3 shadow_ray = lights[l].getPosition() - intersection_point;
+                        shadow_ray.normalize();
+                        float x1, x2;
+                        if(isSphere(scene_objects[i]))
+                        {
+                            //if the object is a sphere we must solve a quadratic to find the intersection of the shadow ray with it
+                            float quad_a = shadow_ray.square();
+                            Vec3 origin_to_center = intersection_point - dynamic_cast<Sphere*>(scene_objects[i])->getPosition();
+                            float quad_b = 2*shadow_ray.dot(origin_to_center);
+                            float radius = dynamic_cast<Sphere*>(scene_objects[i])->getRadius();
+                            float quad_c = origin_to_center.square() - radius*radius;
+                            float x1, x2;
+                            if(quadratic_solve(quad_a, quad_b, quad_c, x1, x2))
+                            {
+                                red = 0.5*red;
+                                blue = 0.5*blue;
+                                green = 0.5*green;
+                            }
+                        }
+
+                    }
+
                     //before proceeding make sure that the values are not greater than 1
                     clamp(red, 0, 1);
                     clamp(green, 0, 1);
@@ -336,4 +377,20 @@ void RayTracer::clamp(float& f, float low_bound, float high_bound)
 
     if(f > high_bound)
         f = high_bound;
+}
+
+bool RayTracer::isPlane(SceneObject *o)
+{
+    if(dynamic_cast<Plane*>(o))
+        return true;
+
+    return false;
+}
+
+bool RayTracer::isSphere(SceneObject *o)
+{
+    if(dynamic_cast<Sphere*>(o))
+        return true;
+
+    return false;
 }

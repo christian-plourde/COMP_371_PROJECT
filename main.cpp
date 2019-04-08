@@ -12,10 +12,7 @@ int main()
     tracer.setLights(loader.getLights());
 
     std::vector<SceneObject*> objects = loader.getAllObjects();
-    for(int t = 0; t<objects.size(); t++)
-    {
-        tracer.trace(objects[t]);
-    }
+    tracer.trace(objects);
 
     tracer.display_image();
     //tracer.save_image("../Images/scene2.bmp");
