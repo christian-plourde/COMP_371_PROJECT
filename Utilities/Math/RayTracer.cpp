@@ -107,6 +107,7 @@ void RayTracer::trace(Sphere s)
                    depth_buffer.getCurrentDepth())
                 {
                     //if the depth is greater, we don't want to draw that point and so we should break
+                    depth_buffer.shift();
                     continue;
                 }
 
@@ -117,6 +118,11 @@ void RayTracer::trace(Sphere s)
                     //update the depth buffer
                     depth_buffer.setCurrentDepth((camera.getPosition() - intersection_point).length());
                 }
+
+                //we also need to check if the sphere is below the plane
+                //this will occur if the ray intersects the plane as well as intersecting the sphere
+                //and if the distance to the plane intersection is less than the distance to the sphere
+                //intersection
 
                 for(int l = 0; l < lights.size(); l++)
                 {
@@ -262,6 +268,7 @@ void RayTracer::trace(Plane p)
                    depth_buffer.getCurrentDepth())
                 {
                     //if the depth is greater, we don't want to draw that point and so we should break
+                    depth_buffer.shift();
                     continue;
                 }
 
