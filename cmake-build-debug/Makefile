@@ -122,6 +122,33 @@ COMP_371_PROJECT/fast:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/build
 .PHONY : COMP_371_PROJECT/fast
 
+Utilities/Math/DepthBuffer.obj: Utilities/Math/DepthBuffer.cpp.obj
+
+.PHONY : Utilities/Math/DepthBuffer.obj
+
+# target to build an object file
+Utilities/Math/DepthBuffer.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/DepthBuffer.cpp.obj
+.PHONY : Utilities/Math/DepthBuffer.cpp.obj
+
+Utilities/Math/DepthBuffer.i: Utilities/Math/DepthBuffer.cpp.i
+
+.PHONY : Utilities/Math/DepthBuffer.i
+
+# target to preprocess a source file
+Utilities/Math/DepthBuffer.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/DepthBuffer.cpp.i
+.PHONY : Utilities/Math/DepthBuffer.cpp.i
+
+Utilities/Math/DepthBuffer.s: Utilities/Math/DepthBuffer.cpp.s
+
+.PHONY : Utilities/Math/DepthBuffer.s
+
+# target to generate assembly for a file
+Utilities/Math/DepthBuffer.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/DepthBuffer.cpp.s
+.PHONY : Utilities/Math/DepthBuffer.cpp.s
+
 Utilities/Math/Matrices.obj: Utilities/Math/Matrices.cpp.obj
 
 .PHONY : Utilities/Math/Matrices.obj
@@ -455,6 +482,9 @@ help:
 	@echo ... COMP_371_PROJECT
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Utilities/Math/DepthBuffer.obj
+	@echo ... Utilities/Math/DepthBuffer.i
+	@echo ... Utilities/Math/DepthBuffer.s
 	@echo ... Utilities/Math/Matrices.obj
 	@echo ... Utilities/Math/Matrices.i
 	@echo ... Utilities/Math/Matrices.s

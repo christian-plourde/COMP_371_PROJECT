@@ -222,3 +222,15 @@ Vec3 Vec3::reflect(Vec3 normal)
     Vec3 temp = n_2*(normal.dot(*this));
     return *this - temp;
 }
+
+bool operator==(Vec3& vector1, Vec3& vector2)
+{
+    if(vector1.x == vector2.x && vector1.y == vector2.y && vector1.z == vector2.z)
+        return true;
+    return false;
+}
+
+bool operator!=(Vec3& vector1, Vec3& vector2)
+{
+    return !(vector1 == vector2);
+}

@@ -32,6 +32,8 @@ class Vec3
         friend Vec3 operator+(Vec3& vec1, Vec3& vec2);
         friend Vec3 operator-(Vec3& vec1, Vec3& vec2);
         friend Vec3 operator*(Vec3& vector, float coeff);
+        friend bool operator==(Vec3& vector1, Vec3& vector2);
+        friend bool operator!=(Vec3& vector1, Vec3& vector2);
         float length();
         Vec3 reflect(Vec3 normal); //reflects a light vector about a normal vector
         float square();

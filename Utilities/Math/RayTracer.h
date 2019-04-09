@@ -8,6 +8,7 @@
 #include "../../Libraries/CImg.h"
 #include "Ray.h"
 #include <vector>
+#include "DepthBuffer.h"
 
 class RayTracer
 {
@@ -19,7 +20,7 @@ class RayTracer
         bool quadratic_solve(float a, float b, float c, float& x1, float& x2); //quadratic equation solver (answer
         //gets stored in x1 and x2)
         bool plane_solve(Vec3& ray_origin, Vec3& ray_direction, Plane& plane, float& t);
-        Vec3 getSphereIntersection(Vec3& ray_origin, Vec3& ray_direction, float intersection_jump);
+        Vec3 getSphereIntersection(Vec3& ray_origin, Vec3& ray_direction, float intersection_jump_1, float intersection_jump_2);
         Vec3 getPlaneIntersection(Vec3& ray_origin, Vec3& ray_direction, float intersection_jump);
         float ambient_coefficient;
         float specular_coefficient;
@@ -28,6 +29,7 @@ class RayTracer
         Plane plane;
         bool isPlane(SceneObject* o);
         bool isSphere(SceneObject* o);
+        DepthBuffer depth_buffer;
 
     public:
         RayTracer(Camera c);

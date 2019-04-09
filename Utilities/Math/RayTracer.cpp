@@ -1,9 +1,9 @@
 #include "RayTracer.h"
 
-RayTracer::RayTracer(Camera c)
+RayTracer::RayTracer(Camera c) : depth_buffer(c.getViewWidth(), c.getViewHeight())
 {
-    ambient_coefficient = 0.7;
-    diffuse_coefficient = 0.4;
+    ambient_coefficient = 0.2;
+    diffuse_coefficient = 0.2;
     specular_coefficient = 0.2;
 
     camera = c;
@@ -63,6 +63,8 @@ void RayTracer::trace(Sphere s)
     Vec3 normal;
     Vec3 intersection_point;
 
+    depth_buffer.reset();
+
     for(int x = 0; x < view_width; x++)
     {
         for(int y = 0; y < view_height; y++)
@@ -86,25 +88,46 @@ void RayTracer::trace(Sphere s)
                 float green = 0;
                 float blue = 0;
 
+                //for each light we need to get the direction from the light to the intersection points
+                //in order to do this, we first need to find those intersection points
+
+                Vec3 ray_direction = ray.getRay();
+                intersection_point = getSphereIntersection(camera.getPosition(), ray_direction, x1, x2);
+
+                //now that we have the intersection points, we need to compute the normals at this point
+                //for the sphere, this is done by taking the difference between the point and the center of the
+                //sphere and then normalizing it
+                normal = intersection_point - s.getPosition();
+                normal.normalize();
+
+                //we need to check if the z value of this intersection is closer than the closest depth recorded
+                //in the depth buffer
+
+                if((camera.getPosition() - intersection_point).length() >
+                   depth_buffer.getCurrentDepth())
+                {
+                    //if the depth is greater, we don't want to draw that point and so we should break
+                    continue;
+                }
+
+                else
+                {
+                    //if the  depth of the intersection is closer than what is in the depth buffer, then we color
+                    //in the pixel
+                    //update the depth buffer
+                    depth_buffer.setCurrentDepth((camera.getPosition() - intersection_point).length());
+                }
+
                 for(int l = 0; l < lights.size(); l++)
                 {
-                    //for each light we need to get the direction from the light to the intersection points
-                    //in order to do this, we first need to find those intersection points
-                    Vec3 ray_direction = ray.getRay();
-                    intersection_point = getSphereIntersection(camera.getPosition(), ray_direction, x1);
 
                     //we only want to keep the closest intersection point so we don't draw for no reason
-                    //now that we have the intersection points, we need to compute the normals at this point
-                    //for the sphere, this is done by taking the difference between the point and the center of the
-                    //sphere and then normalizing it
-                    normal = intersection_point - s.getPosition();
-                    normal.normalize();
 
                     //now we need to calculate the diffuse strength for each of these points
                     //the diffuse strength is the dot product of the light direction and the surface normal
                     //if the light direction is parallel to the normal this is highest intensity = 1
                     //if it is perpendicular then the intensity is 0
-                    Vec3 light_direction = lights[l].getPosition() - intersection_point;
+                    Vec3 light_direction = intersection_point - lights[l].getPosition();
                     light_direction.normalize();
                     float diffuse_strength = light_direction.dot(normal);
                     clamp(diffuse_strength, 0, 1);
@@ -130,6 +153,35 @@ void RayTracer::trace(Sphere s)
                            + diffuse_coefficient*diffuse_strength*s.getDiffuseColor().z
                            + specular_coefficient*spec_strength*s.getSpecularColor().z;
 
+                    //now that we have computed the colors from the lighting we need to check if this pixel should be
+                    //in shadow. This will be the case if there is another object between it and the light.
+                    //therefore we need to iterate through each of the other objects and see if there is an
+                    //intersection between the shadow ray (a vector connection our computed intersection_point
+                    //and the light) and that object. If there is, then this pixel should be in shadow
+                    for(int i = 0; i < scene_objects.size(); i++) {
+                        //for each object first construct the shadow ray
+                        Vec3 shadow_ray = lights[l].getPosition() - intersection_point;
+                        shadow_ray.normalize();
+                        float x1, x2;
+
+                        if (isSphere(scene_objects[i]) && scene_objects[i]->getPosition() != s.getPosition()) {
+                            //if the object is a sphere we must solve a quadratic to find the intersection of the shadow ray with it
+                            float quad_a = shadow_ray.square();
+                            Vec3 origin_to_center =
+                                    intersection_point - dynamic_cast<Sphere *>(scene_objects[i])->getPosition();
+                            float quad_b = 2 * shadow_ray.dot(origin_to_center);
+                            float radius = dynamic_cast<Sphere *>(scene_objects[i])->getRadius();
+                            float quad_c = origin_to_center.square() - radius * radius;
+                            float x1, x2;
+                            if (quadratic_solve(quad_a, quad_b, quad_c, x1, x2)) {
+                                red = 0.5 * red;
+                                blue = 0.5 * blue;
+                                green = 0.5 * green;
+                            }
+                        }
+                    }
+
+
                     //before proceeding make sure that the values are not greater than 1
                     clamp(red, 0, 1);
                     clamp(green, 0, 1);
@@ -140,6 +192,7 @@ void RayTracer::trace(Sphere s)
                 image(ray.getPixel().x, ray.getPixel().y, 0, 1) = green*255;
                 image(ray.getPixel().x, ray.getPixel().y, 0, 2) = blue*255;
             }
+            depth_buffer.shift();
         }
     }
 
@@ -169,6 +222,7 @@ void RayTracer::trace(Plane p)
     int view_height = camera.getViewHeight();
     float t; //the solution to the plane intersection
     Ray ray;
+    depth_buffer.reset();
 
     for(int x = 0; x < view_width; x++)
     {
@@ -191,18 +245,39 @@ void RayTracer::trace(Plane p)
                 float green = 0;
                 float blue = 0;
 
+                //for each light we need to get the direction from the light to the intersection points
+                //in order to do this, we first need to find those intersection points
+                Vec3 intersection_point = getPlaneIntersection(camera.getPosition(), ray_direction, t);
+
+                //now that we have the intersection points, we need to compute the normals at this point
+                //for the sphere, this is done by taking the difference between the point and the center of the
+                //sphere and then normalizing it
+                Vec3 normal = p.getNormal();
+                normal.normalize();
+
+                //we need to check if the z value of this intersection is closer than the closest depth recorded
+                //in the depth buffer
+
+                if((camera.getPosition() - intersection_point).length() >
+                   depth_buffer.getCurrentDepth())
+                {
+                    //if the depth is greater, we don't want to draw that point and so we should break
+                    continue;
+                }
+
+                else
+                {
+                    //if the  depth of the intersection is closer than what is in the depth buffer, then we color
+                    //in the pixel
+                    //update the depth buffer
+                    depth_buffer.setCurrentDepth((camera.getPosition() - intersection_point).length());
+                }
+
                 for(int l = 0; l < lights.size(); l++)
                 {
-                    //for each light we need to get the direction from the light to the intersection points
-                    //in order to do this, we first need to find those intersection points
-                    Vec3 intersection_point = getPlaneIntersection(camera.getPosition(), ray_direction, t);
+
 
                     //we only want to keep the closest intersection point so we don't draw for no reason
-                    //now that we have the intersection points, we need to compute the normals at this point
-                    //for the sphere, this is done by taking the difference between the point and the center of the
-                    //sphere and then normalizing it
-                    Vec3 normal = p.getNormal();
-                    normal.normalize();
 
                     //now we need to calculate the diffuse strength for each of these points
                     //the diffuse strength is the dot product of the light direction and the surface normal
@@ -274,6 +349,8 @@ void RayTracer::trace(Plane p)
                 image(ray.getPixel().x, ray.getPixel().y, 0, 1) = green*255;
                 image(ray.getPixel().x, ray.getPixel().y, 0, 2) = blue*255;
             }
+
+            depth_buffer.shift(); //move to the next element in the depth buffer
         }
     }
     std::cout << "Plane Processing Complete." << std::endl;
@@ -304,10 +381,10 @@ bool RayTracer::quadratic_solve(float a, float b, float c, float& x1, float& x2)
 
     float disc = discriminant(a, b, c);
     //if the discriminant is less than 0, this means there are no solutions and we should return false
-    if(disc < 0)
+    if(disc < 1e-6)
         return false;
 
-    else if(disc == 0)
+    else if(disc == 1e-6)
     {
         //if the discriminant is zero, then we should calculate the one solution which is given by -b/2a
         //and assign to each solution and return true
@@ -339,12 +416,17 @@ float RayTracer::discriminant(float a, float b, float c)
     return b*b - 4*a*c;
 }
 
-Vec3 RayTracer::getSphereIntersection(Vec3& ray_origin, Vec3& ray_direction, float intersection_jump)
+Vec3 RayTracer::getSphereIntersection(Vec3& ray_origin, Vec3& ray_direction, float intersection_jump_1, float intersection_jump_2)
 {
     //this calculates the intersection point for a sphere based on the ray origin, its direction and the intersection
     //jump, which is a solution to the quadratic equation.
-    Vec3 ray_jump = ray_direction*intersection_jump;
-    return ray_origin + ray_jump;
+    Vec3 ray_jump_1 = ray_direction*intersection_jump_1;
+    Vec3 ray_jump_2 = ray_direction*intersection_jump_2;
+
+    if((ray_origin+ray_jump_1).length() < (ray_origin+ray_jump_2).length())
+        return ray_origin + ray_jump_1;
+    else
+        return ray_origin + ray_jump_2;
 }
 
 Vec3 RayTracer::getPlaneIntersection(Vec3& ray_origin, Vec3& ray_direction, float intersection_jump)

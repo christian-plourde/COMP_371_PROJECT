@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/DepthBuffer.cpp">
+			<Option target="COMP_371_PROJECT"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/DepthBuffer.h">
+			<Option target="COMP_371_PROJECT"/>
+		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Matrices.cpp">
 			<Option target="COMP_371_PROJECT"/>
 		</Unit>

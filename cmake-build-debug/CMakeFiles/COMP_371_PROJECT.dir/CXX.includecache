@@ -114,6 +114,12 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Libraries/
 CImg.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Libraries/CImg.h
 
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/DepthBuffer.h
+Ray.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Ray.h
+vector
+-
+
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Matrices.h
 Vectors.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
@@ -121,10 +127,6 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Ray.h
 Vectors.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
-
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayTracer.cpp
-RayTracer.h
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayTracer.h
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayTracer.h
 ../SceneElements/Camera.h
@@ -141,6 +143,8 @@ Ray.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Ray.h
 vector
 -
+DepthBuffer.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/DepthBuffer.h
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
 iostream

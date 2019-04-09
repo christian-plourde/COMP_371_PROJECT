@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/DepthBuffer.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/DepthBuffer.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Matrices.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Matrices.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Ray.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/RayTracer.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj"
