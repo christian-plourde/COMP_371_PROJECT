@@ -34,6 +34,7 @@ class RayTracer
         bool isMesh(SceneObject* o);
         DepthBuffer depth_buffer;
         float area(Vec3 intersection_point, Vec3 coord_1, Vec3 coord_2);
+        bool cast_shadows;
 
     public:
         RayTracer(Camera c);
@@ -47,6 +48,8 @@ class RayTracer
         void trace(Plane p); //will do ray tracing for a plane
         void trace(Mesh m); //will do ray tracing for a mesh
         void clamp(float& f, float low_bound, float high_bound); //clamps the float value passed between the low and high bounds
+        inline void setCastShadows(bool value){cast_shadows = value;}
+        bool intersection_at_camera(Vec3 intersection);
 };
 
 #endif

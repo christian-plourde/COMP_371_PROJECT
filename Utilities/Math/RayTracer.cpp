@@ -2,6 +2,7 @@
 
 RayTracer::RayTracer(Camera c) : depth_buffer(c.getViewWidth(), c.getViewHeight())
 {
+    cast_shadows = true;
     ambient_coefficient = 0.6;
     diffuse_coefficient = 0.6;
     specular_coefficient = 0.6;
@@ -105,9 +106,11 @@ void RayTracer::trace(Sphere s)
 
                 //we need to check if the z value of this intersection is closer than the closest depth recorded
                 //in the depth buffer
+                //we also need to check if the intersection point is at the camera. If this is the case, then
+                //we should not be able to see the object
 
                 if((camera.getPosition() - intersection_point).length() >
-                   depth_buffer.getCurrentDepth())
+                   depth_buffer.getCurrentDepth() || intersection_at_camera(intersection_point))
                 {
                     //if the depth is greater, we don't want to draw that point and so we should break
                     depth_buffer.shift();
@@ -167,29 +170,50 @@ void RayTracer::trace(Sphere s)
                     //therefore we need to iterate through each of the other objects and see if there is an
                     //intersection between the shadow ray (a vector connection our computed intersection_point
                     //and the light) and that object. If there is, then this pixel should be in shadow
-                    for(int i = 0; i < scene_objects.size(); i++) {
-                        //for each object first construct the shadow ray
-                        Vec3 shadow_ray = lights[l].getPosition() - intersection_point;
-                        shadow_ray.normalize();
-                        float x1, x2;
-
-                        if (isSphere(scene_objects[i]) && scene_objects[i]->getPosition() != s.getPosition()) {
-                            //if the object is a sphere we must solve a quadratic to find the intersection of the shadow ray with it
-                            float quad_a = shadow_ray.square();
-                            Vec3 origin_to_center =
-                                    intersection_point - dynamic_cast<Sphere *>(scene_objects[i])->getPosition();
-                            float quad_b = 2 * shadow_ray.dot(origin_to_center);
-                            float radius = dynamic_cast<Sphere *>(scene_objects[i])->getRadius();
-                            float quad_c = origin_to_center.square() - radius * radius;
+                    if(cast_shadows)
+                    {
+                        for(int i = 0; i < scene_objects.size(); i++)
+                        {
+                            //for each object first construct the shadow ray
+                            Vec3 shadow_ray = lights[l].getPosition() - intersection_point;
+                            shadow_ray.normalize();
                             float x1, x2;
-                            if (quadratic_solve(quad_a, quad_b, quad_c, x1, x2)) {
-                                red = 0.5 * red;
-                                blue = 0.5 * blue;
-                                green = 0.5 * green;
+
+                            if (isSphere(scene_objects[i]) && scene_objects[i]->getPosition() != s.getPosition())
+                            {
+                                //if the object is a sphere we must solve a quadratic to find the intersection of the shadow ray with it
+                                float quad_a = shadow_ray.square();
+                                Vec3 origin_to_center =
+                                        intersection_point - dynamic_cast<Sphere *>(scene_objects[i])->getPosition();
+                                float quad_b = 2 * shadow_ray.dot(origin_to_center);
+                                float radius = dynamic_cast<Sphere *>(scene_objects[i])->getRadius();
+                                float quad_c = origin_to_center.square() - radius * radius;
+                                float x1, x2;
+                                if (quadratic_solve(quad_a, quad_b, quad_c, x1, x2)) {
+                                    red = 0.5 * red;
+                                    blue = 0.5 * blue;
+                                    green = 0.5 * green;
+                                }
+                            }
+
+                            //if the object is a mesh, then we should compute the intersection with a mesh
+                            if(isMesh(scene_objects[i]))
+                            {
+                                Mesh m = *(dynamic_cast<Mesh*>(scene_objects[i]));
+                                for(int i = 0; i < m.getMeshFaces().size(); i++)
+                                {
+                                    if(mesh_face_solve(lights[l].getPosition(), shadow_ray, m.getMeshFaces()[i],
+                                                       intersection_point))
+                                    {
+                                        red = 0.5*red;
+                                        blue = 0.5*blue;
+                                        green = 0.5*blue;
+                                    }
+                                }
+
                             }
                         }
                     }
-
 
                     //before proceeding make sure that the values are not greater than 1
                     clamp(red, 0, 1);
@@ -268,7 +292,7 @@ void RayTracer::trace(Plane p)
                 //in the depth buffer
 
                 if((camera.getPosition() - intersection_point).length() >
-                   depth_buffer.getCurrentDepth())
+                   depth_buffer.getCurrentDepth() || intersection_at_camera(intersection_point))
                 {
                     //if the depth is greater, we don't want to draw that point and so we should break
                     depth_buffer.shift();
@@ -324,29 +348,49 @@ void RayTracer::trace(Plane p)
                     //therefore we need to iterate through each of the other objects and see if there is an
                     //intersection between the shadow ray (a vector connection our computed intersection_point
                     //and the light) and that object. If there is, then this pixel should be in shadow
-                    for(int i = 0; i < scene_objects.size(); i++)
+                    if(cast_shadows)
                     {
-                        //for each object first construct the shadow ray
-                        Vec3 shadow_ray = lights[l].getPosition() - intersection_point;
-                        shadow_ray.normalize();
-                        float x1, x2;
-                        if(isSphere(scene_objects[i]))
+                        for(int i = 0; i < scene_objects.size(); i++)
                         {
-                            //if the object is a sphere we must solve a quadratic to find the intersection of the shadow ray with it
-                            float quad_a = shadow_ray.square();
-                            Vec3 origin_to_center = intersection_point - dynamic_cast<Sphere*>(scene_objects[i])->getPosition();
-                            float quad_b = 2*shadow_ray.dot(origin_to_center);
-                            float radius = dynamic_cast<Sphere*>(scene_objects[i])->getRadius();
-                            float quad_c = origin_to_center.square() - radius*radius;
+                            //for each object first construct the shadow ray
+                            Vec3 shadow_ray = lights[l].getPosition() - intersection_point;
+                            shadow_ray.normalize();
                             float x1, x2;
-                            if(quadratic_solve(quad_a, quad_b, quad_c, x1, x2))
+                            if(isSphere(scene_objects[i]))
                             {
-                                red = 0.5*red;
-                                blue = 0.5*blue;
-                                green = 0.5*green;
+                                //if the object is a sphere we must solve a quadratic to find the intersection of the shadow ray with it
+                                float quad_a = shadow_ray.square();
+                                Vec3 origin_to_center = intersection_point - dynamic_cast<Sphere*>(scene_objects[i])->getPosition();
+                                float quad_b = 2*shadow_ray.dot(origin_to_center);
+                                float radius = dynamic_cast<Sphere*>(scene_objects[i])->getRadius();
+                                float quad_c = origin_to_center.square() - radius*radius;
+                                float x1, x2;
+                                if(quadratic_solve(quad_a, quad_b, quad_c, x1, x2))
+                                {
+                                    red = 0.5*red;
+                                    blue = 0.5*blue;
+                                    green = 0.5*green;
+                                }
                             }
-                        }
 
+                            //if the object is a mesh, then we should compute the intersection with a mesh
+                            if(isMesh(scene_objects[i]))
+                            {
+                                Mesh m = *(dynamic_cast<Mesh*>(scene_objects[i]));
+                                for(int i = 0; i < m.getMeshFaces().size(); i++)
+                                {
+                                    if(mesh_face_solve(lights[l].getPosition(), shadow_ray, m.getMeshFaces()[i],
+                                                       intersection_point))
+                                    {
+                                        red = 0.5*red;
+                                        blue = 0.5*blue;
+                                        green = 0.5*blue;
+                                    }
+                                }
+
+                            }
+
+                        }
                     }
 
                     //before proceeding make sure that the values are not greater than 1
@@ -375,11 +419,12 @@ void RayTracer::trace(Mesh m)
     Ray ray;
     Plane triangle_plane;
     Vec3 intersection_point;
+    Vec3 normal;
 
     //mesh processing involves the individual processing of each of the mesh faces in the mesh
     for(int i = 0; i < m.getMeshFaces().size(); i++)
     {
-        std::cout << m.getMeshFaces()[i] << std::endl;
+        normal = m.getMeshFaces()[i].getNormal();
         //for each mesh face, we need to first determine if the ray intersects it. This is equivalent to solving
         //a plane intersection so we can reuse our plane_solve method
 
@@ -409,7 +454,7 @@ void RayTracer::trace(Mesh m)
                     //in the depth buffer
 
                     if((camera.getPosition() - intersection_point).length() >
-                       depth_buffer.getCurrentDepth())
+                       depth_buffer.getCurrentDepth() || intersection_at_camera(intersection_point))
                     {
                         //if the depth is greater, we don't want to draw that point and so we should break
                         depth_buffer.shift();
@@ -426,10 +471,79 @@ void RayTracer::trace(Mesh m)
 
                     for(int l = 0; l < lights.size(); l++)
                     {
-                        image(ray.getPixel().x, ray.getPixel().y, 0, 0) = red*255;
-                        image(ray.getPixel().x, ray.getPixel().y, 0, 1) = green*255;
-                        image(ray.getPixel().x, ray.getPixel().y, 0, 2) = blue*255;
+
+                        //now we need to calculate the diffuse strength for each of these points
+                        //the diffuse strength is the dot product of the light direction and the surface normal
+                        //if the light direction is parallel to the normal this is highest intensity = 1
+                        //if it is perpendicular then the intensity is 0
+                        Vec3 light_direction = lights[l].getPosition() - intersection_point;
+                        light_direction.normalize();
+                        float diffuse_strength = light_direction.dot(normal);
+                        clamp(diffuse_strength, 0, 1);
+
+                        //the next step is to calculate the specular strength
+                        //in order to do this, we need to take the dot of the reflected light vector about the normal
+                        //and the view vector, which is the ray direction and raise it to the shininess
+                        Vec3 reflection = light_direction.reflect(normal);
+                        reflection.normalize();
+                        ray_direction.normalize();
+                        float spec_strength = ray_direction.dot(reflection);
+                        clamp(spec_strength, 0, 1);
+                        spec_strength = pow(spec_strength, m.getShininess());
+
+                        //now we calculate the color of the pixel
+                        red += ambient_coefficient*m.getAmbientColor().x
+                               + diffuse_coefficient*diffuse_strength*m.getDiffuseColor().x
+                               + specular_coefficient*spec_strength*m.getSpecularColor().x;
+                        green += ambient_coefficient*m.getAmbientColor().y
+                                 + diffuse_coefficient*diffuse_strength*m.getDiffuseColor().y
+                                 + specular_coefficient*spec_strength*m.getSpecularColor().y;
+                        blue += ambient_coefficient*m.getAmbientColor().z
+                                + diffuse_coefficient*diffuse_strength*m.getDiffuseColor().z
+                                + specular_coefficient*spec_strength*m.getSpecularColor().z;
+
+                        //now that we have computed the colors from the lighting we need to check if this pixel should be
+                        //in shadow. This will be the case if there is another object between it and the light.
+                        //therefore we need to iterate through each of the other objects and see if there is an
+                        //intersection between the shadow ray (a vector connection our computed intersection_point
+                        //and the light) and that object. If there is, then this pixel should be in shadow
+                        if(cast_shadows)
+                        {
+                            for(int i = 0; i < scene_objects.size(); i++)
+                            {
+                                //for each object first construct the shadow ray
+                                Vec3 shadow_ray = lights[l].getPosition() - intersection_point;
+                                shadow_ray.normalize();
+                                float x1, x2;
+                                //if the object is a sphere, then we should compute intersection with a sphere
+                                if(isSphere(scene_objects[i]))
+                                {
+                                    //if the object is a sphere we must solve a quadratic to find the intersection of the shadow ray with it
+                                    float quad_a = shadow_ray.square();
+                                    Vec3 origin_to_center = intersection_point - dynamic_cast<Sphere*>(scene_objects[i])->getPosition();
+                                    float quad_b = 2*shadow_ray.dot(origin_to_center);
+                                    float radius = dynamic_cast<Sphere*>(scene_objects[i])->getRadius();
+                                    float quad_c = origin_to_center.square() - radius*radius;
+                                    float x1, x2;
+                                    if(quadratic_solve(quad_a, quad_b, quad_c, x1, x2))
+                                    {
+                                        red = 0.5*red;
+                                        blue = 0.5*blue;
+                                        green = 0.5*green;
+                                    }
+                                }
+                            }
+                        }
+
+                        //before proceeding make sure that the values are not greater than 1
+                        clamp(red, 0, 1);
+                        clamp(green, 0, 1);
+                        clamp(blue, 0, 1);
                     }
+
+                    image(ray.getPixel().x, ray.getPixel().y, 0, 0) = red*255;
+                    image(ray.getPixel().x, ray.getPixel().y, 0, 1) = green*255;
+                    image(ray.getPixel().x, ray.getPixel().y, 0, 2) = blue*255;
 
                 }
 
@@ -452,6 +566,8 @@ bool RayTracer::mesh_face_solve(Vec3 &ray_origin, Vec3 &ray_direction, MeshFace 
     Plane p;
     p.setNormal(face.getNormal());
     p.setPosition(face.getFirstVertex());
+    Vec3 normal = face.getNormal();
+    float epsilon = 1e-6;
 
     //if the face is front facing we can check for intersection
     //the first thing we need to do is find the intersection point. This can be done with the plane equation that we
@@ -462,17 +578,20 @@ bool RayTracer::mesh_face_solve(Vec3 &ray_origin, Vec3 &ray_direction, MeshFace 
         //if we found a solution, we should then calculate the actual point of intersection
         intersection_point = getPlaneIntersection(ray_origin, ray_direction, t);
 
-        //now that we have the intersection point, we need to determine if this point is inside the triangle or not
-        //to do this, we need to compute barycentric coordinates
-        //we will need the area of our mesh_face
-        float tri_area = face.area();
+        //inside outside test
+        Vec3 A = face.getSecondVertex();
+        Vec3 B = face.getFirstVertex();
+        Vec3 C = face.getThirdVertex();
 
-        //we also need the areas of the inner triangles.
-        float u = area(intersection_point, face.getFirstVertex(), face.getSecondVertex())/tri_area;
-        float v = area(intersection_point, face.getSecondVertex(), face.getThirdVertex())/tri_area;
-        float w = area(intersection_point, face.getSecondVertex(), face.getThirdVertex())/tri_area;
+        Vec3 AtoB = B-A;
+        Vec3 BtoC = C-B;
+        Vec3 CtoA = A-C;
 
-        if(u < 1.0 && v < 1.0 && w < 1.0)
+        Vec3 AtoQ = intersection_point - A;
+        Vec3 BtoQ = intersection_point - B;
+        Vec3 CtoQ = intersection_point - C;
+
+        if((AtoB*AtoQ).dot(normal) < epsilon && (BtoC*BtoQ).dot(normal) < epsilon && (CtoA*CtoQ).dot(normal) < epsilon)
             return true;
 
         return false;
@@ -617,4 +736,13 @@ float RayTracer::area(Vec3 intersection_point, Vec3 coord_1, Vec3 coord_2)
     Vec3 Pto1 = coord_1 - intersection_point;
     Vec3 C1toC2 = coord_1 - coord_2;
     return 0.5*(Pto1*C1toC2).length();
+}
+
+bool RayTracer::intersection_at_camera(Vec3 intersection)
+{
+    //compute the difference between the intersection and the camera position
+    Vec3 cam = camera.getPosition();
+    if((intersection - cam).length() < 1e-6)
+        return true;
+    return false;
 }

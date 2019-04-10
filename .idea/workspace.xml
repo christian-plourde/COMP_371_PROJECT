@@ -12,9 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f91c2776-864e-40dd-b6c0-9ffb3a74b2bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Images/scene1.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/Images/scene1.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Math/RayTracer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Math/RayTracer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -33,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="115">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -42,15 +44,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
+            <state relative-caret-position="-115">
+              <caret line="412" column="29" selection-start-line="412" selection-start-column="29" selection-end-line="412" selection-end-column="29" />
               <folding>
-                <element signature="e#9574#18010#0" />
-                <element signature="e#18105#20896#0" />
+                <element signature="e#24#593#0" />
+                <element signature="e#595#1042#0" />
+                <element signature="e#1044#10598#0" />
+                <element signature="e#9668#18104#0" />
+                <element signature="e#18106#21184#0" />
+                <element signature="e#21186#22991#0" />
+                <element signature="e#22993#23699#0" />
+                <element signature="e#23701#24839#0" />
+                <element signature="e#24841#24925#0" />
+                <element signature="e#24927#25518#0" />
+                <element signature="e#25520#25711#0" />
+                <element signature="e#25713#25776#0" />
+                <element signature="e#25778#25856#0" />
+                <element signature="e#25858#26100#0" />
+                <element signature="e#26102#26217#0" />
+                <element signature="e#26219#26336#0" />
+                <element signature="e#26338#26450#0" />
+                <element signature="e#26452#26746#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scenes/mesh_scene1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -92,7 +119,6 @@
         <option value="$PROJECT_DIR$/Utilities/Math/Ray.cpp" />
         <option value="$PROJECT_DIR$/Utilities/Math/RayContainer.cpp" />
         <option value="$PROJECT_DIR$/scenes/scene5.txt" />
-        <option value="$PROJECT_DIR$/scenes/mesh_scene2.txt" />
         <option value="$PROJECT_DIR$/scenes/scene2.txt" />
         <option value="$PROJECT_DIR$/scenes/scene1.txt" />
         <option value="$PROJECT_DIR$/Utilities/SceneElements/Plane.h" />
@@ -103,7 +129,6 @@
         <option value="$PROJECT_DIR$/Utilities/Math/DepthBuffer.cpp" />
         <option value="$PROJECT_DIR$/Utilities/Math/Vectors.h" />
         <option value="$PROJECT_DIR$/Utilities/Math/Vectors.cpp" />
-        <option value="$PROJECT_DIR$/scenes/mesh_scene1.txt" />
         <option value="$PROJECT_DIR$/Utilities/ObjectParser/ObjectLoader.h" />
         <option value="$PROJECT_DIR$/Utilities/SceneLoader.h" />
         <option value="$PROJECT_DIR$/Utilities/SceneElements/Mesh.h" />
@@ -111,11 +136,14 @@
         <option value="$PROJECT_DIR$/Utilities/SceneLoader.cpp" />
         <option value="$PROJECT_DIR$/Utilities/ObjectParser/MeshFace.h" />
         <option value="$PROJECT_DIR$/Utilities/ObjectParser/MeshFace.cpp" />
-        <option value="$PROJECT_DIR$/Utilities/Math/RayTracer.h" />
         <option value="$PROJECT_DIR$/scenes/cube.obj" />
         <option value="$PROJECT_DIR$/Utilities/ObjectParser/MeshLoader.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/scenes/mesh_scene3.txt" />
+        <option value="$PROJECT_DIR$/Utilities/Math/RayTracer.h" />
         <option value="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" />
+        <option value="$PROJECT_DIR$/scenes/mesh_scene2.txt" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/scenes/mesh_scene1.txt" />
       </list>
     </option>
   </component>
@@ -143,7 +171,7 @@
             <path>
               <item name="COMP_371_PROJECT" type="b2602c69:ProjectViewProjectNode" />
               <item name="COMP_371_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="scenes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -223,12 +251,12 @@
       <workItem from="1554761798283" duration="3618000" />
       <workItem from="1554831003828" duration="14358000" />
       <workItem from="1554846298981" duration="740000" />
-      <workItem from="1554897137164" duration="17754000" />
+      <workItem from="1554897137164" duration="28859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129333000" />
+    <option name="totallyTimeSpent" value="140438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -260,20 +288,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Utilities/SceneElements/Camera.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Math/Matrices.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3404">
-          <caret line="148" column="40" lean-forward="true" selection-start-line="148" selection-start-column="40" selection-end-line="148" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/Math/Matrices.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="943">
@@ -293,20 +307,6 @@
     <entry file="file://$PROJECT_DIR$/scenes/scene4.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-298" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scenes/scene5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-460">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scenes/scene2.txt">
@@ -460,9 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene2.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -500,16 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/SceneLoader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="350" column="34" selection-start-line="350" selection-start-column="34" selection-end-line="350" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scenes/scene5.bmp">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -522,26 +509,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="35" column="72" lean-forward="true" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
-          <folding>
-            <element signature="e#43#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene1.bmp">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/scenes/cube.obj">
       <provider selected="true" editor-type-id="text-editor">
@@ -557,9 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/scene1.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/ObjectParser/MeshLoader.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -567,24 +531,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Images/scene1.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/cube_rot.obj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/scene5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="41" column="6" lean-forward="true" selection-end-line="41" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/SceneLoader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="350" column="34" selection-start-line="350" selection-start-column="34" selection-end-line="350" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene1.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+          <folding>
+            <element signature="e#43#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene2.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="412" column="29" selection-start-line="412" selection-start-column="29" selection-end-line="412" selection-end-column="29" />
+          <folding>
+            <element signature="e#24#593#0" />
+            <element signature="e#595#1042#0" />
+            <element signature="e#1044#10598#0" />
+            <element signature="e#9668#18104#0" />
+            <element signature="e#18106#21184#0" />
+            <element signature="e#21186#22991#0" />
+            <element signature="e#22993#23699#0" />
+            <element signature="e#23701#24839#0" />
+            <element signature="e#24841#24925#0" />
+            <element signature="e#24927#25518#0" />
+            <element signature="e#25520#25711#0" />
+            <element signature="e#25713#25776#0" />
+            <element signature="e#25778#25856#0" />
+            <element signature="e#25858#26100#0" />
+            <element signature="e#26102#26217#0" />
+            <element signature="e#26219#26336#0" />
+            <element signature="e#26338#26450#0" />
+            <element signature="e#26452#26746#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state relative-caret-position="115">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
+    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
-          <folding>
-            <element signature="e#9574#18010#0" />
-            <element signature="e#18105#20896#0" />
-          </folding>
+        <state relative-caret-position="224">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
         </state>
       </provider>
     </entry>
