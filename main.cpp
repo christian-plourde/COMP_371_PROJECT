@@ -35,5 +35,6 @@ int main()
     tracer.display_image();
     if(render_setup.getSaveImage())
         tracer.save_image(IMAGE_FILE_PATH.c_str());
+
     return 0;
 }

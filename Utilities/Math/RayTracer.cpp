@@ -583,6 +583,9 @@ bool RayTracer::mesh_face_solve(Vec3 &ray_origin, Vec3 &ray_direction, MeshFace 
         Vec3 B = face.getFirstVertex();
         Vec3 C = face.getThirdVertex();
 
+        //we calculate the vectors that make up the edges and the do the cross product with the vector that
+        //contains the intersection point and the vertex we are on. If the rsult is in the same direction as the normal
+        //then we are inside, otherwise we are not
         Vec3 AtoB = B-A;
         Vec3 BtoC = C-B;
         Vec3 CtoA = A-C;

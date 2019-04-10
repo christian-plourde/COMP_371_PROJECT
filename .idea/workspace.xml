@@ -13,6 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f91c2776-864e-40dd-b6c0-9ffb3a74b2bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,10 +32,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="116">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="557" column="112" selection-start-line="557" selection-start-column="112" selection-end-line="557" selection-end-column="112" />
+              <folding>
+                <element signature="e#620#1067#0" />
+                <element signature="e#1069#11014#0" />
+                <element signature="e#11016#20564#0" />
+                <element signature="e#20566#28424#0" />
+                <element signature="e#28426#30231#0" />
+                <element signature="e#30233#30939#0" />
+                <element signature="e#30941#32079#0" />
+                <element signature="e#32081#32165#0" />
+                <element signature="e#32167#32758#0" />
+                <element signature="e#32760#32951#0" />
+                <element signature="e#32953#33016#0" />
+                <element signature="e#33018#33096#0" />
+                <element signature="e#33098#33340#0" />
+                <element signature="e#33342#33457#0" />
+                <element signature="e#33459#33576#0" />
+                <element signature="e#33578#33690#0" />
+                <element signature="e#33692#33986#0" />
+                <element signature="e#33988#34248#0" />
               </folding>
             </state>
           </provider>
@@ -42,38 +73,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="171">
+              <caret line="50" column="63" lean-forward="true" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
+        <entry file="file://$PROJECT_DIR$/Utilities/ObjectParser/MeshLoader.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="556" selection-start-line="556" selection-end-line="556" />
-              <folding>
-                <element signature="e#24#593#0" />
-                <element signature="e#595#1042#0" />
-                <element signature="e#1044#10598#0" />
-                <element signature="e#9668#18104#0" />
-                <element signature="e#18106#21184#0" />
-                <element signature="e#21186#22991#0" />
-                <element signature="e#22993#23699#0" />
-                <element signature="e#23701#24839#0" />
-                <element signature="e#24841#24925#0" />
-                <element signature="e#24927#25518#0" />
-                <element signature="e#25520#25711#0" />
-                <element signature="e#25713#25776#0" />
-                <element signature="e#25778#25856#0" />
-                <element signature="e#25858#26100#0" />
-                <element signature="e#26102#26217#0" />
-                <element signature="e#26219#26336#0" />
-                <element signature="e#26338#26450#0" />
-                <element signature="e#26452#26746#0" />
-                <element signature="e#33850#33916#0" />
-              </folding>
+            <state relative-caret-position="575">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
         </entry>
@@ -135,12 +145,12 @@
         <option value="$PROJECT_DIR$/Utilities/ObjectParser/MeshLoader.cpp" />
         <option value="$PROJECT_DIR$/scenes/mesh_scene3.txt" />
         <option value="$PROJECT_DIR$/Utilities/Math/RayTracer.h" />
-        <option value="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" />
         <option value="$PROJECT_DIR$/scenes/mesh_scene2.txt" />
         <option value="$PROJECT_DIR$/scenes/mesh_scene1.txt" />
         <option value="$PROJECT_DIR$/Utilities/RenderSetupHelper.cpp" />
         <option value="$PROJECT_DIR$/Utilities/RenderSetupHelper.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" />
         <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
@@ -165,6 +175,11 @@
             <path>
               <item name="COMP_371_PROJECT" type="b2602c69:ProjectViewProjectNode" />
               <item name="COMP_371_PROJECT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="COMP_371_PROJECT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="COMP_371_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -244,30 +259,30 @@
       <workItem from="1554761798283" duration="3618000" />
       <workItem from="1554831003828" duration="14358000" />
       <workItem from="1554846298981" duration="740000" />
-      <workItem from="1554897137164" duration="32800000" />
+      <workItem from="1554897137164" duration="34758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144379000" />
+    <option name="totallyTimeSpent" value="146337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21099435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21099435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899627" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32899627" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32899627" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39962825" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4995958" weight="0.32899627" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32899627" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899627" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.32899627" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" />
@@ -483,16 +498,6 @@
     <entry file="file://$PROJECT_DIR$/scenes/scene5.bmp">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/ObjectParser/MeshFace.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="e#73#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scenes/cube.obj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -504,13 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/ObjectParser/MeshLoader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -594,48 +592,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
+    <entry file="file://$PROJECT_DIR$/Utilities/ObjectParser/MeshLoader.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="556" selection-start-line="556" selection-end-line="556" />
-          <folding>
-            <element signature="e#24#593#0" />
-            <element signature="e#595#1042#0" />
-            <element signature="e#1044#10598#0" />
-            <element signature="e#9668#18104#0" />
-            <element signature="e#18106#21184#0" />
-            <element signature="e#21186#22991#0" />
-            <element signature="e#22993#23699#0" />
-            <element signature="e#23701#24839#0" />
-            <element signature="e#24841#24925#0" />
-            <element signature="e#24927#25518#0" />
-            <element signature="e#25520#25711#0" />
-            <element signature="e#25713#25776#0" />
-            <element signature="e#25778#25856#0" />
-            <element signature="e#25858#26100#0" />
-            <element signature="e#26102#26217#0" />
-            <element signature="e#26219#26336#0" />
-            <element signature="e#26338#26450#0" />
-            <element signature="e#26452#26746#0" />
-            <element signature="e#33850#33916#0" />
-          </folding>
+        <state relative-caret-position="575">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="116">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/ObjectParser/MeshFace.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <element signature="e#73#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="557" column="112" selection-start-line="557" selection-start-column="112" selection-end-line="557" selection-end-column="112" />
+          <folding>
+            <element signature="e#620#1067#0" />
+            <element signature="e#1069#11014#0" />
+            <element signature="e#11016#20564#0" />
+            <element signature="e#20566#28424#0" />
+            <element signature="e#28426#30231#0" />
+            <element signature="e#30233#30939#0" />
+            <element signature="e#30941#32079#0" />
+            <element signature="e#32081#32165#0" />
+            <element signature="e#32167#32758#0" />
+            <element signature="e#32760#32951#0" />
+            <element signature="e#32953#33016#0" />
+            <element signature="e#33018#33096#0" />
+            <element signature="e#33098#33340#0" />
+            <element signature="e#33342#33457#0" />
+            <element signature="e#33459#33576#0" />
+            <element signature="e#33578#33690#0" />
+            <element signature="e#33692#33986#0" />
+            <element signature="e#33988#34248#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.MD">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="171">
+          <caret line="50" column="63" lean-forward="true" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
         </state>
       </provider>
     </entry>
