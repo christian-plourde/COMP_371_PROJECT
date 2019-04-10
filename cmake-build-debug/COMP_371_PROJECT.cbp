@@ -122,6 +122,12 @@
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/ObjectParser/MeshLoader.h">
 			<Option target="COMP_371_PROJECT"/>
 		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/RenderSetupHelper.cpp">
+			<Option target="COMP_371_PROJECT"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/RenderSetupHelper.h">
+			<Option target="COMP_371_PROJECT"/>
+		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.cpp">
 			<Option target="COMP_371_PROJECT"/>
 		</Unit>

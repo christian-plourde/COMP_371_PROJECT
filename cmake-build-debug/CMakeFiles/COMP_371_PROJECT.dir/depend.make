@@ -43,6 +43,9 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj: ../Ut
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj: ../Utilities/SceneElements/Mesh.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj: ../Utilities/SceneElements/SceneObject.h
 
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/RenderSetupHelper.cpp.obj: ../Utilities/RenderSetupHelper.cpp
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/RenderSetupHelper.cpp.obj: ../Utilities/RenderSetupHelper.h
+
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj: ../Utilities/Math/Matrices.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj: ../Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj: ../Utilities/SceneElements/Camera.cpp
@@ -93,6 +96,7 @@ CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Math/RayTracer.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/ObjectParser/MeshFace.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/ObjectParser/MeshLoader.h
+CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/RenderSetupHelper.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/Camera.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/Light.h
 CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj: ../Utilities/SceneElements/Mesh.h

@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/DepthBuffer.cpp.obj"
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj"
   "CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.obj"
+  "CMakeFiles/COMP_371_PROJECT.dir/Utilities/RenderSetupHelper.cpp.obj"
   "COMP_371_PROJECT.pdb"
   "COMP_371_PROJECT.exe"
   "COMP_371_PROJECT.exe.manifest"

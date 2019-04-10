@@ -43,6 +43,9 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/ObjectParser/MeshLoader.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Mesh.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/SceneObject.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/RenderSetupHelper.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/RenderSetupHelper.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/RenderSetupHelper.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Camera.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Matrices.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
@@ -94,6 +97,7 @@ CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/Math/Vectors.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/ObjectParser/MeshFace.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/ObjectParser/MeshLoader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/RenderSetupHelper.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Camera.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Light.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_PROJECT/Utilities/SceneElements/Mesh.h

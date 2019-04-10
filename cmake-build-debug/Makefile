@@ -311,6 +311,33 @@ Utilities/ObjectParser/MeshLoader.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.s
 .PHONY : Utilities/ObjectParser/MeshLoader.cpp.s
 
+Utilities/RenderSetupHelper.obj: Utilities/RenderSetupHelper.cpp.obj
+
+.PHONY : Utilities/RenderSetupHelper.obj
+
+# target to build an object file
+Utilities/RenderSetupHelper.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/RenderSetupHelper.cpp.obj
+.PHONY : Utilities/RenderSetupHelper.cpp.obj
+
+Utilities/RenderSetupHelper.i: Utilities/RenderSetupHelper.cpp.i
+
+.PHONY : Utilities/RenderSetupHelper.i
+
+# target to preprocess a source file
+Utilities/RenderSetupHelper.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/RenderSetupHelper.cpp.i
+.PHONY : Utilities/RenderSetupHelper.cpp.i
+
+Utilities/RenderSetupHelper.s: Utilities/RenderSetupHelper.cpp.s
+
+.PHONY : Utilities/RenderSetupHelper.s
+
+# target to generate assembly for a file
+Utilities/RenderSetupHelper.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/RenderSetupHelper.cpp.s
+.PHONY : Utilities/RenderSetupHelper.cpp.s
+
 Utilities/SceneElements/Camera.obj: Utilities/SceneElements/Camera.cpp.obj
 
 .PHONY : Utilities/SceneElements/Camera.obj
@@ -557,6 +584,9 @@ help:
 	@echo ... Utilities/ObjectParser/MeshLoader.obj
 	@echo ... Utilities/ObjectParser/MeshLoader.i
 	@echo ... Utilities/ObjectParser/MeshLoader.s
+	@echo ... Utilities/RenderSetupHelper.obj
+	@echo ... Utilities/RenderSetupHelper.i
+	@echo ... Utilities/RenderSetupHelper.s
 	@echo ... Utilities/SceneElements/Camera.obj
 	@echo ... Utilities/SceneElements/Camera.i
 	@echo ... Utilities/SceneElements/Camera.s
