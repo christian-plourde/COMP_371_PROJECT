@@ -1,4 +1,4 @@
-COMP 371 PROJECT
-AUTHOR: CHRISTIAN PLOURDE
-STUDENT ID: 26572499
+COMP 371 PROJECT <br/>
+AUTHOR: CHRISTIAN PLOURDE <br/>
+STUDENT ID: 26572499 <br/>
 ------------------------------------------------------------------------------------------------------------------
