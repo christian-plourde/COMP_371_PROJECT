@@ -2,9 +2,9 @@
 
 RayTracer::RayTracer(Camera c) : depth_buffer(c.getViewWidth(), c.getViewHeight())
 {
-    ambient_coefficient = 0.5;
-    diffuse_coefficient = 0.5;
-    specular_coefficient = 0.5;
+    ambient_coefficient = 0.6;
+    diffuse_coefficient = 0.6;
+    specular_coefficient = 0.6;
 
     camera = c;
     //now we need to add the rays to our ray container
@@ -138,7 +138,7 @@ void RayTracer::trace(Sphere s)
                     //if it is perpendicular then the intensity is 0
                     Vec3 light_direction = intersection_point - lights[l].getPosition();
                     light_direction.normalize();
-                    float diffuse_strength = light_direction.dot(normal);
+                    float diffuse_strength = -light_direction.dot(normal);
                     clamp(diffuse_strength, 0, 1);
 
                     //the next step is to calculate the specular strength
@@ -379,6 +379,7 @@ void RayTracer::trace(Mesh m)
     //mesh processing involves the individual processing of each of the mesh faces in the mesh
     for(int i = 0; i < m.getMeshFaces().size(); i++)
     {
+        std::cout << m.getMeshFaces()[i] << std::endl;
         //for each mesh face, we need to first determine if the ray intersects it. This is equivalent to solving
         //a plane intersection so we can reuse our plane_solve method
 
@@ -471,10 +472,10 @@ bool RayTracer::mesh_face_solve(Vec3 &ray_origin, Vec3 &ray_direction, MeshFace 
         float v = area(intersection_point, face.getSecondVertex(), face.getThirdVertex())/tri_area;
         float w = area(intersection_point, face.getSecondVertex(), face.getThirdVertex())/tri_area;
 
-        if(u > 1.0 || v > 1.0 || w > 1.0)
-            return false;
+        if(u < 1.0 && v < 1.0 && w < 1.0)
+            return true;
 
-        return true;
+        return false;
     }
 
     //if the ray does not even intersect the plane then we should return false
