@@ -42,6 +42,7 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Light.cpp.obj: ../Utilit
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj: ../Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj: ../Utilities/SceneElements/Mesh.cpp
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj: ../Utilities/SceneElements/Mesh.h
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Mesh.cpp.obj: ../Utilities/SceneElements/SceneObject.h
 
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj: ../Utilities/Math/Vectors.h
 CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/Plane.cpp.obj: ../Utilities/SceneElements/Plane.cpp

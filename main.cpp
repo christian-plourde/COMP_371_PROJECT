@@ -8,6 +8,7 @@ int main()
 
     loader.setFilePath("../scenes/scene5.txt");
     loader.loadScene();
+    loader.print_data();
     RayTracer tracer(loader.getCamera());
     tracer.setLights(loader.getLights());
 

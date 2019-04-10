@@ -245,7 +245,7 @@ bool SceneLoader::loadScene()
                 Light light;
 
                 //we have 4 lines to read
-                for(int i = 0; i<4; i++)
+                for(int i = 0; i<3; i++)
                 {
                     std::getline(input, line);
 

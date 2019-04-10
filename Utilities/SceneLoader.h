@@ -18,7 +18,6 @@ class SceneLoader
         std::vector<Sphere> spheres;
         int object_count;
         const char* filename;
-        void print_data();
         bool contains_mesh; //this is to indicate if there is a mesh in the scene or not so we don't draw it unnecessarily
 
     public:
@@ -33,6 +32,7 @@ class SceneLoader
         inline std::vector<Sphere>& getSpheres(){return spheres;}
         inline std::vector<Light>& getLights(){return lights;}
         std::vector<SceneObject*> getAllObjects();
+        void print_data();
 };
 
 #endif
