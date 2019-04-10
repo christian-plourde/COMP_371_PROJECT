@@ -257,6 +257,60 @@ Utilities/Math/Vectors.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Vectors.cpp.s
 .PHONY : Utilities/Math/Vectors.cpp.s
 
+Utilities/ObjectParser/MeshFace.obj: Utilities/ObjectParser/MeshFace.cpp.obj
+
+.PHONY : Utilities/ObjectParser/MeshFace.obj
+
+# target to build an object file
+Utilities/ObjectParser/MeshFace.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.obj
+.PHONY : Utilities/ObjectParser/MeshFace.cpp.obj
+
+Utilities/ObjectParser/MeshFace.i: Utilities/ObjectParser/MeshFace.cpp.i
+
+.PHONY : Utilities/ObjectParser/MeshFace.i
+
+# target to preprocess a source file
+Utilities/ObjectParser/MeshFace.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.i
+.PHONY : Utilities/ObjectParser/MeshFace.cpp.i
+
+Utilities/ObjectParser/MeshFace.s: Utilities/ObjectParser/MeshFace.cpp.s
+
+.PHONY : Utilities/ObjectParser/MeshFace.s
+
+# target to generate assembly for a file
+Utilities/ObjectParser/MeshFace.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.s
+.PHONY : Utilities/ObjectParser/MeshFace.cpp.s
+
+Utilities/ObjectParser/MeshLoader.obj: Utilities/ObjectParser/MeshLoader.cpp.obj
+
+.PHONY : Utilities/ObjectParser/MeshLoader.obj
+
+# target to build an object file
+Utilities/ObjectParser/MeshLoader.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj
+.PHONY : Utilities/ObjectParser/MeshLoader.cpp.obj
+
+Utilities/ObjectParser/MeshLoader.i: Utilities/ObjectParser/MeshLoader.cpp.i
+
+.PHONY : Utilities/ObjectParser/MeshLoader.i
+
+# target to preprocess a source file
+Utilities/ObjectParser/MeshLoader.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.i
+.PHONY : Utilities/ObjectParser/MeshLoader.cpp.i
+
+Utilities/ObjectParser/MeshLoader.s: Utilities/ObjectParser/MeshLoader.cpp.s
+
+.PHONY : Utilities/ObjectParser/MeshLoader.s
+
+# target to generate assembly for a file
+Utilities/ObjectParser/MeshLoader.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_PROJECT.dir\build.make CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.s
+.PHONY : Utilities/ObjectParser/MeshLoader.cpp.s
+
 Utilities/SceneElements/Camera.obj: Utilities/SceneElements/Camera.cpp.obj
 
 .PHONY : Utilities/SceneElements/Camera.obj
@@ -497,6 +551,12 @@ help:
 	@echo ... Utilities/Math/Vectors.obj
 	@echo ... Utilities/Math/Vectors.i
 	@echo ... Utilities/Math/Vectors.s
+	@echo ... Utilities/ObjectParser/MeshFace.obj
+	@echo ... Utilities/ObjectParser/MeshFace.i
+	@echo ... Utilities/ObjectParser/MeshFace.s
+	@echo ... Utilities/ObjectParser/MeshLoader.obj
+	@echo ... Utilities/ObjectParser/MeshLoader.i
+	@echo ... Utilities/ObjectParser/MeshLoader.s
 	@echo ... Utilities/SceneElements/Camera.obj
 	@echo ... Utilities/SceneElements/Camera.i
 	@echo ... Utilities/SceneElements/Camera.s

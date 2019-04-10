@@ -173,6 +173,13 @@ bool SceneLoader::loadScene()
                         mesh.setShininess(shi);
                     }
                 }
+
+                //we now need to load the mesh data from the obj file using our mesh loader
+                //we will need a mesh loader to load the mesh
+                MeshLoader mesh_loader(mesh);
+                mesh_loader.setDirectory("../scenes");
+                mesh_loader.load();
+                mesh.setMeshFaces(mesh_loader.getMeshFaces());
             }
 
             //next we need to look for spheres. Since there can be many, we store these spheres in a vector
@@ -339,6 +346,10 @@ void SceneLoader::print_data()
 std::vector<SceneObject*> SceneLoader::getAllObjects()
 {
     std::vector<SceneObject*> toReturn;
+
+    if(contains_mesh)
+        toReturn.push_back(&mesh);
+
     toReturn.push_back(&plane);
     for(int i = 0; i < spheres.size(); i++)
     {

@@ -7,6 +7,7 @@
 #include "SceneElements/Mesh.h"
 #include "SceneElements/Plane.h"
 #include "SceneElements/Sphere.h"
+#include "ObjectParser/MeshLoader.h"
 
 class SceneLoader
 {
@@ -19,6 +20,7 @@ class SceneLoader
         int object_count;
         const char* filename;
         bool contains_mesh; //this is to indicate if there is a mesh in the scene or not so we don't draw it unnecessarily
+
 
     public:
         SceneLoader();

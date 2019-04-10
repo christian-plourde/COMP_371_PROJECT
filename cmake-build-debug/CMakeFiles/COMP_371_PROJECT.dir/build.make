@@ -225,6 +225,32 @@ CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/DepthBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/DepthBuffer.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\Math\DepthBuffer.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\Math\DepthBuffer.cpp.s
 
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj: ../Utilities/ObjectParser/MeshLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\ObjectParser\MeshLoader.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\ObjectParser\MeshLoader.cpp"
+
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\ObjectParser\MeshLoader.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\ObjectParser\MeshLoader.cpp.i
+
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\ObjectParser\MeshLoader.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\ObjectParser\MeshLoader.cpp.s
+
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.obj: CMakeFiles/COMP_371_PROJECT.dir/flags.make
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.obj: ../Utilities/ObjectParser/MeshFace.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\ObjectParser\MeshFace.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\ObjectParser\MeshFace.cpp"
+
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\ObjectParser\MeshFace.cpp" > CMakeFiles\COMP_371_PROJECT.dir\Utilities\ObjectParser\MeshFace.cpp.i
+
+CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\Utilities\ObjectParser\MeshFace.cpp" -o CMakeFiles\COMP_371_PROJECT.dir\Utilities\ObjectParser\MeshFace.cpp.s
+
 # Object files for target COMP_371_PROJECT
 COMP_371_PROJECT_OBJECTS = \
 "CMakeFiles/COMP_371_PROJECT.dir/main.cpp.obj" \
@@ -239,7 +265,9 @@ COMP_371_PROJECT_OBJECTS = \
 "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj" \
 "CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj" \
 "CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/SceneObject.cpp.obj" \
-"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/DepthBuffer.cpp.obj"
+"CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/DepthBuffer.cpp.obj" \
+"CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj" \
+"CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.obj"
 
 # External object files for target COMP_371_PROJECT
 COMP_371_PROJECT_EXTERNAL_OBJECTS =
@@ -257,11 +285,13 @@ COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.c
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/Ray.cpp.obj
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/SceneElements/SceneObject.cpp.obj
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/DepthBuffer.cpp.obj
+COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshLoader.cpp.obj
+COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/Utilities/ObjectParser/MeshFace.cpp.obj
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/build.make
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/linklibs.rsp
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/objects1.rsp
 COMP_371_PROJECT.exe: CMakeFiles/COMP_371_PROJECT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable COMP_371_PROJECT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_PROJECT\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable COMP_371_PROJECT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\COMP_371_PROJECT.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

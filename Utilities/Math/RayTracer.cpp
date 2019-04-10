@@ -2,9 +2,9 @@
 
 RayTracer::RayTracer(Camera c) : depth_buffer(c.getViewWidth(), c.getViewHeight())
 {
-    ambient_coefficient = 0.2;
-    diffuse_coefficient = 0.2;
-    specular_coefficient = 0.2;
+    ambient_coefficient = 0.5;
+    diffuse_coefficient = 0.5;
+    specular_coefficient = 0.5;
 
     camera = c;
     //now we need to add the rays to our ray container
@@ -30,7 +30,10 @@ void RayTracer::trace(std::vector<SceneObject*> s)
             plane = *(dynamic_cast<Plane*>(s[i]));
             trace(*(dynamic_cast<Plane*>(s[i])));
         }
-
+        if(isMesh(s[i]))
+        {
+            trace(*(dynamic_cast<Mesh*>(s[i])));
+        }
     }
 }
 
@@ -363,6 +366,122 @@ void RayTracer::trace(Plane p)
     std::cout << "Plane Processing Complete." << std::endl;
 }
 
+void RayTracer::trace(Mesh m)
+{
+    std::cout << "Processing Mesh..." << std::endl;
+    int view_width = camera.getViewWidth();
+    int view_height = camera.getViewHeight();
+    float t; //the solution to the plane intersection
+    Ray ray;
+    Plane triangle_plane;
+    Vec3 intersection_point;
+
+    //mesh processing involves the individual processing of each of the mesh faces in the mesh
+    for(int i = 0; i < m.getMeshFaces().size(); i++)
+    {
+        //for each mesh face, we need to first determine if the ray intersects it. This is equivalent to solving
+        //a plane intersection so we can reuse our plane_solve method
+
+        depth_buffer.reset();
+
+        //go through each of the pixels as before
+        for(int x = 0; x < view_width; x++)
+        {
+            for (int y = 0; y < view_height; y++)
+            {
+                //iterate over each "pixel" that the camera can see and set the ray for that pixel
+                ray.setRay(Vec3(view_width / 2 - x, y - view_height / 2, camera.getFocalLength()));
+                ray.setPixel(Pixel(x, y));
+                ray.getRay().normalize();
+
+                Vec3 ray_direction = ray.getRay();
+
+                //we need to determine if the ray intersects with the triangle
+                if(mesh_face_solve(camera.getPosition(), ray_direction, m.getMeshFaces()[i], intersection_point))
+                {
+                    //the three color channels
+                    float red = 0;
+                    float green = 0;
+                    float blue = 0;
+
+                    //we need to check if the z value of this intersection is closer than the closest depth recorded
+                    //in the depth buffer
+
+                    if((camera.getPosition() - intersection_point).length() >
+                       depth_buffer.getCurrentDepth())
+                    {
+                        //if the depth is greater, we don't want to draw that point and so we should break
+                        depth_buffer.shift();
+                        continue;
+                    }
+
+                    else
+                    {
+                        //if the  depth of the intersection is closer than what is in the depth buffer, then we color
+                        //in the pixel
+                        //update the depth buffer
+                        depth_buffer.setCurrentDepth((camera.getPosition() - intersection_point).length());
+                    }
+
+                    for(int l = 0; l < lights.size(); l++)
+                    {
+                        image(ray.getPixel().x, ray.getPixel().y, 0, 0) = red*255;
+                        image(ray.getPixel().x, ray.getPixel().y, 0, 1) = green*255;
+                        image(ray.getPixel().x, ray.getPixel().y, 0, 2) = blue*255;
+                    }
+
+                }
+
+                depth_buffer.shift(); //move to the next element in the depth buffer
+            }
+        }
+    }
+
+    std::cout << "Mesh Processing Complete." << std::endl;
+}
+
+bool RayTracer::mesh_face_solve(Vec3 &ray_origin, Vec3 &ray_direction, MeshFace &face, Vec3& intersection_point)
+{
+    //this will return true if the passed ray intersects the mesh face and the solution will be stored in
+    //t. If there is no intersection, the method will return false
+    //Since this is essentially a plane intersection with extra steps we need to first create the plane
+    //that the mesh face resides in
+    //the normal of this plane is the mesh face normal and the position can be any of the three vertices of the
+    //mesh plane
+    Plane p;
+    p.setNormal(face.getNormal());
+    p.setPosition(face.getFirstVertex());
+
+    //if the face is front facing we can check for intersection
+    //the first thing we need to do is find the intersection point. This can be done with the plane equation that we
+    //solved earlier
+    float t;
+    if(plane_solve(ray_origin, ray_direction, p, t))
+    {
+        //if we found a solution, we should then calculate the actual point of intersection
+        intersection_point = getPlaneIntersection(ray_origin, ray_direction, t);
+
+        //now that we have the intersection point, we need to determine if this point is inside the triangle or not
+        //to do this, we need to compute barycentric coordinates
+        //we will need the area of our mesh_face
+        float tri_area = face.area();
+
+        //we also need the areas of the inner triangles.
+        float u = area(intersection_point, face.getFirstVertex(), face.getSecondVertex())/tri_area;
+        float v = area(intersection_point, face.getSecondVertex(), face.getThirdVertex())/tri_area;
+        float w = area(intersection_point, face.getSecondVertex(), face.getThirdVertex())/tri_area;
+
+        if(u > 1.0 || v > 1.0 || w > 1.0)
+            return false;
+
+        return true;
+    }
+
+    //if the ray does not even intersect the plane then we should return false
+    else
+        return false;
+}
+
 bool RayTracer::plane_solve(Vec3& ray_origin, Vec3& ray_direction, Plane& plane, float& t)
 {
     //this will solve the plane equation derived in the plane tracer function: t = ((p0 - O).n)/(D.n)
@@ -482,4 +601,19 @@ bool RayTracer::isSphere(SceneObject *o)
         return true;
 
     return false;
+}
+
+bool RayTracer::isMesh(SceneObject* o)
+{
+    if(dynamic_cast<Mesh*>(o))
+        return true;
+    return false;
+}
+
+float RayTracer::area(Vec3 intersection_point, Vec3 coord_1, Vec3 coord_2)
+{
+    //this method calculates the area of a triangle formed by the three coordinates specified
+    Vec3 Pto1 = coord_1 - intersection_point;
+    Vec3 C1toC2 = coord_1 - coord_2;
+    return 0.5*(Pto1*C1toC2).length();
 }
