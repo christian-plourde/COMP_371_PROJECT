@@ -424,6 +424,7 @@ void RayTracer::trace(Mesh m)
     //mesh processing involves the individual processing of each of the mesh faces in the mesh
     for(int i = 0; i < m.getMeshFaces().size(); i++)
     {
+        std::cout << "Processing face " << i << " of " << m.getMeshFaces().size() << std::endl;
         normal = m.getMeshFaces()[i].getNormal();
         //for each mesh face, we need to first determine if the ray intersects it. This is equivalent to solving
         //a plane intersection so we can reuse our plane_solve method

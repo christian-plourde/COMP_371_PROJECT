@@ -11,7 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f91c2776-864e-40dd-b6c0-9ffb3a74b2bb" name="Default Changelist" comment="" />
+    <list default="true" id="f91c2776-864e-40dd-b6c0-9ffb3a74b2bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,42 +28,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="298">
+              <caret line="426" column="95" selection-start-line="426" selection-start-column="95" selection-end-line="426" selection-end-column="95" />
               <folding>
                 <element signature="e#620#1067#0" />
                 <element signature="e#1069#11014#0" />
                 <element signature="e#11016#20564#0" />
-                <element signature="e#20566#28424#0" />
-                <element signature="e#28426#30231#0" />
-                <element signature="e#30233#30939#0" />
-                <element signature="e#30941#32079#0" />
-                <element signature="e#32081#32165#0" />
-                <element signature="e#32167#32758#0" />
-                <element signature="e#32760#32951#0" />
-                <element signature="e#32953#33016#0" />
-                <element signature="e#33018#33096#0" />
-                <element signature="e#33098#33340#0" />
-                <element signature="e#33342#33457#0" />
-                <element signature="e#33459#33576#0" />
-                <element signature="e#33578#33690#0" />
-                <element signature="e#33692#33986#0" />
-                <element signature="e#33988#34248#0" />
+                <element signature="e#28426#30510#0" />
               </folding>
             </state>
           </provider>
@@ -134,9 +111,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="530" />
-    <option name="height" value="1031" />
+    <option name="x" value="-12" />
+    <option name="width" value="531" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -157,7 +134,13 @@
             <path>
               <item name="COMP_371_PROJECT" type="b2602c69:ProjectViewProjectNode" />
               <item name="COMP_371_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="scenes" type="462c0819:PsiDirectoryNode" />
+              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="COMP_371_PROJECT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="COMP_371_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="Math" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -174,7 +157,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -237,30 +220,35 @@
       <workItem from="1554761798283" duration="3618000" />
       <workItem from="1554831003828" duration="14358000" />
       <workItem from="1554846298981" duration="740000" />
-      <workItem from="1554897137164" duration="35767000" />
+      <workItem from="1554897137164" duration="36257000" />
+      <workItem from="1554933719154" duration="176000" />
+      <workItem from="1554933930823" duration="135000" />
+      <workItem from="1554934102383" duration="317000" />
+      <workItem from="1554934450183" duration="257000" />
+      <workItem from="1554991981038" duration="97000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147346000" />
+    <option name="totallyTimeSpent" value="148818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21099435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22995952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899627" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899627" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32774675" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39962825" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4995958" weight="0.32899627" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899627" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4995958" weight="0.32774675" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32774675" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.32899627" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" />
@@ -274,7 +262,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Images/test.bmp" />
     <entry file="file://$PROJECT_DIR$/scenes/scene3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-483" />
@@ -386,16 +373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Math/DepthBuffer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="90" column="63" selection-start-line="90" selection-start-column="63" selection-end-line="90" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scenes/scene1.bmp">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -453,16 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/SceneElements/Mesh.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#31#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/ObjectParser/MeshLoader.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -490,9 +457,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/scene1.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/scene1.bmp" />
     <entry file="file://$PROJECT_DIR$/scenes/cube_rot.obj">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -503,13 +468,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/mesh_scene3.txt" />
     <entry file="file://$PROJECT_DIR$/Utilities/SceneLoader.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -543,26 +502,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/RenderSetupHelper.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Images/image1.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/RenderSetupHelper.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-          <folding>
-            <element signature="e#91#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/image1.bmp" />
     <entry file="file://$PROJECT_DIR$/Utilities/ObjectParser/MeshFace.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -580,16 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scenes/mesh_scene1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -604,29 +534,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Libraries/CImg.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/Math/DepthBuffer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/RenderSetupHelper.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/RenderSetupHelper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <element signature="e#91#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/SceneElements/Mesh.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#31#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="298">
+          <caret line="426" column="95" selection-start-line="426" selection-start-column="95" selection-end-line="426" selection-end-column="95" />
           <folding>
             <element signature="e#620#1067#0" />
             <element signature="e#1069#11014#0" />
             <element signature="e#11016#20564#0" />
-            <element signature="e#20566#28424#0" />
-            <element signature="e#28426#30231#0" />
-            <element signature="e#30233#30939#0" />
-            <element signature="e#30941#32079#0" />
-            <element signature="e#32081#32165#0" />
-            <element signature="e#32167#32758#0" />
-            <element signature="e#32760#32951#0" />
-            <element signature="e#32953#33016#0" />
-            <element signature="e#33018#33096#0" />
-            <element signature="e#33098#33340#0" />
-            <element signature="e#33342#33457#0" />
-            <element signature="e#33459#33576#0" />
-            <element signature="e#33578#33690#0" />
-            <element signature="e#33692#33986#0" />
-            <element signature="e#33988#34248#0" />
+            <element signature="e#28426#30510#0" />
           </folding>
         </state>
       </provider>
