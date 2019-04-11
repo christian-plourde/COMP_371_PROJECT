@@ -14,6 +14,7 @@
     <list default="true" id="f91c2776-864e-40dd-b6c0-9ffb3a74b2bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/patrick_scene.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/patrick_scene.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,13 +32,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="426" column="95" selection-start-line="426" selection-start-column="95" selection-end-line="426" selection-end-column="95" />
+            <state relative-caret-position="139">
+              <caret line="209" column="105" selection-start-line="209" selection-start-column="105" selection-end-line="209" selection-end-column="105" />
               <folding>
                 <element signature="e#620#1067#0" />
-                <element signature="e#1069#11014#0" />
                 <element signature="e#11016#20564#0" />
-                <element signature="e#28426#30510#0" />
+                <element signature="e#20566#28561#0" />
+                <element signature="e#28563#30647#0" />
               </folding>
             </state>
           </provider>
@@ -123,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,6 +146,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,23 +226,24 @@
       <workItem from="1554933930823" duration="135000" />
       <workItem from="1554934102383" duration="317000" />
       <workItem from="1554934450183" duration="257000" />
-      <workItem from="1554991981038" duration="97000" />
+      <workItem from="1554991981038" duration="437000" />
+      <workItem from="1554995895651" duration="461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148818000" />
+    <option name="totallyTimeSpent" value="149619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22995952" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2340081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899627" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32774675" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32774675" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39962825" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -586,13 +588,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="426" column="95" selection-start-line="426" selection-start-column="95" selection-end-line="426" selection-end-column="95" />
+        <state relative-caret-position="139">
+          <caret line="209" column="105" selection-start-line="209" selection-start-column="105" selection-end-line="209" selection-end-column="105" />
           <folding>
             <element signature="e#620#1067#0" />
-            <element signature="e#1069#11014#0" />
             <element signature="e#11016#20564#0" />
-            <element signature="e#28426#30510#0" />
+            <element signature="e#20566#28561#0" />
+            <element signature="e#28563#30647#0" />
           </folding>
         </state>
       </provider>

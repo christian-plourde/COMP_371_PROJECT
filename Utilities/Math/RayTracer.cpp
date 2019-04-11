@@ -200,9 +200,14 @@ void RayTracer::trace(Sphere s)
                             if(isMesh(scene_objects[i]))
                             {
                                 Mesh m = *(dynamic_cast<Mesh*>(scene_objects[i]));
+                                MeshFace meshFaces[m.getMeshFaces().size()];
+
+                                for(int i = 0; i < m.getMeshFaces().size(); i++)
+                                    meshFaces[i] = m.getMeshFaces()[i];
+
                                 for(int i = 0; i < m.getMeshFaces().size(); i++)
                                 {
-                                    if(mesh_face_solve(lights[l].getPosition(), shadow_ray, m.getMeshFaces()[i],
+                                    if(mesh_face_solve(lights[l].getPosition(), shadow_ray, meshFaces[i],
                                                        intersection_point))
                                     {
                                         red = 0.5*red;
@@ -377,9 +382,14 @@ void RayTracer::trace(Plane p)
                             if(isMesh(scene_objects[i]))
                             {
                                 Mesh m = *(dynamic_cast<Mesh*>(scene_objects[i]));
+                                MeshFace meshFaces[m.getMeshFaces().size()];
+
+                                for(int i = 0; i < m.getMeshFaces().size(); i++)
+                                    meshFaces[i] = m.getMeshFaces()[i];
+
                                 for(int i = 0; i < m.getMeshFaces().size(); i++)
                                 {
-                                    if(mesh_face_solve(lights[l].getPosition(), shadow_ray, m.getMeshFaces()[i],
+                                    if(mesh_face_solve(lights[l].getPosition(), shadow_ray, meshFaces[i],
                                                        intersection_point))
                                     {
                                         red = 0.5*red;
@@ -412,6 +422,11 @@ void RayTracer::trace(Plane p)
 
 void RayTracer::trace(Mesh m)
 {
+    MeshFace meshFaces[m.getMeshFaces().size()];
+
+    for(int i = 0; i < m.getMeshFaces().size(); i++)
+        meshFaces[i] = m.getMeshFaces()[i];
+
     std::cout << "Processing Mesh..." << std::endl;
     int view_width = camera.getViewWidth();
     int view_height = camera.getViewHeight();
@@ -425,7 +440,7 @@ void RayTracer::trace(Mesh m)
     for(int i = 0; i < m.getMeshFaces().size(); i++)
     {
         std::cout << "Processing face " << i << " of " << m.getMeshFaces().size() << std::endl;
-        normal = m.getMeshFaces()[i].getNormal();
+        normal = meshFaces[i].getNormal();
         //for each mesh face, we need to first determine if the ray intersects it. This is equivalent to solving
         //a plane intersection so we can reuse our plane_solve method
 
@@ -444,7 +459,7 @@ void RayTracer::trace(Mesh m)
                 Vec3 ray_direction = ray.getRay();
 
                 //we need to determine if the ray intersects with the triangle
-                if(mesh_face_solve(camera.getPosition(), ray_direction, m.getMeshFaces()[i], intersection_point))
+                if(mesh_face_solve(camera.getPosition(), ray_direction, meshFaces[i], intersection_point))
                 {
                     //the three color channels
                     float red = 0;
