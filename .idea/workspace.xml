@@ -12,7 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f91c2776-864e-40dd-b6c0-9ffb3a74b2bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Math/RayTracer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/Utilities/Math/RayTracer.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_PROJECT.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP_371_PROJECT.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP_371_PROJECT.exe" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,16 +31,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="708" column="1" selection-start-line="708" selection-start-column="1" selection-end-line="708" selection-end-column="1" />
+            <state relative-caret-position="254">
+              <caret line="538" column="71" selection-start-line="538" selection-start-column="71" selection-end-line="538" selection-end-column="71" />
               <folding>
                 <element signature="e#620#1067#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Images/evaluation_scene3.bmp">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Images/evaluation_scene4.bmp">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Images/evaluation_scene5.bmp">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -133,11 +152,6 @@
               <item name="COMP_371_PROJECT" type="462c0819:PsiDirectoryNode" />
               <item name="Images" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="COMP_371_PROJECT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP_371_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -224,23 +238,24 @@
       <workItem from="1554934450183" duration="257000" />
       <workItem from="1554991981038" duration="437000" />
       <workItem from="1554995895651" duration="716000" />
-      <workItem from="1555018627593" duration="3016000" />
+      <workItem from="1555018627593" duration="3265000" />
+      <workItem from="1555068403897" duration="688000" />
+      <workItem from="1555069519564" duration="237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152890000" />
+    <option name="totallyTimeSpent" value="154064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23805667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24615385" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899627" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32774675" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32774675" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39962825" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -261,20 +276,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Utilities/SceneElements/Sphere.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/SceneElements/Light.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/SceneElements/SceneObject.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -536,18 +537,6 @@
     <entry file="file://$PROJECT_DIR$/Images/evaluation_scene2.bmp">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/evaluation_scene3.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Images/evaluation_scene4.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Images/evaluation_scene5.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Images/evaluation_scene6.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/scenes/evaluate_scene8.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-513" />
@@ -555,13 +544,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/Math/RayTracer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="708" column="1" selection-start-line="708" selection-start-column="1" selection-end-line="708" selection-end-column="1" />
+        <state relative-caret-position="254">
+          <caret line="538" column="71" selection-start-line="538" selection-start-column="71" selection-end-line="538" selection-end-column="71" />
           <folding>
             <element signature="e#620#1067#0" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/evaluation_scene3.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/evaluation_scene4.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/evaluation_scene6.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/evaluation_scene8.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/evaluation_scene7.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/evaluation_scene5.bmp">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>

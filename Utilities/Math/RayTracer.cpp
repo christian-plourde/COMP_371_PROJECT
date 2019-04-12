@@ -3,9 +3,9 @@
 RayTracer::RayTracer(Camera c) : depth_buffer(c.getViewWidth(), c.getViewHeight())
 {
     cast_shadows = true;
-    ambient_coefficient = 0.6;
-    diffuse_coefficient = 0.6;
-    specular_coefficient = 0.6;
+    ambient_coefficient = 0.4;
+    diffuse_coefficient = 0.4;
+    specular_coefficient = 0.4;
 
     camera = c;
     //now we need to add the rays to our ray container
@@ -156,14 +156,20 @@ void RayTracer::trace(Sphere s)
 
                     //now we calculate the color of the pixel
                     red += ambient_coefficient*s.getAmbientColor().x
-                            + diffuse_coefficient*diffuse_strength*s.getDiffuseColor().x
-                            + specular_coefficient*spec_strength*s.getSpecularColor().x;
+                            + diffuse_coefficient*diffuse_strength*(s.getDiffuseColor().x
+                            + lights[l].getDiffuseColor().x)
+                            + specular_coefficient*spec_strength*(s.getSpecularColor().x
+                            + lights[l].getSpecularColor().x);
                     green += ambient_coefficient*s.getAmbientColor().y
-                           + diffuse_coefficient*diffuse_strength*s.getDiffuseColor().y
-                           + specular_coefficient*spec_strength*s.getSpecularColor().y;
+                           + diffuse_coefficient*diffuse_strength*(s.getDiffuseColor().y
+                           + lights[l].getDiffuseColor().y)
+                           + specular_coefficient*spec_strength*(s.getSpecularColor().y
+                           + lights[l].getSpecularColor().y);
                     blue += ambient_coefficient*s.getAmbientColor().z
-                           + diffuse_coefficient*diffuse_strength*s.getDiffuseColor().z
-                           + specular_coefficient*spec_strength*s.getSpecularColor().z;
+                           + diffuse_coefficient*diffuse_strength*(s.getDiffuseColor().z
+                           + lights[l].getDiffuseColor().z)
+                           + specular_coefficient*spec_strength*(s.getSpecularColor().z
+                           + lights[l].getSpecularColor().z);
 
                     //now that we have computed the colors from the lighting we need to check if this pixel should be
                     //in shadow. This will be the case if there is another object between it and the light.
@@ -339,14 +345,20 @@ void RayTracer::trace(Plane p)
 
                     //now we calculate the color of the pixel
                     red += ambient_coefficient*p.getAmbientColor().x
-                           + diffuse_coefficient*diffuse_strength*p.getDiffuseColor().x
-                           + specular_coefficient*spec_strength*p.getSpecularColor().x;
+                           + diffuse_coefficient*diffuse_strength*(p.getDiffuseColor().x
+                                                                   + lights[l].getDiffuseColor().x)
+                           + specular_coefficient*spec_strength*(p.getSpecularColor().x
+                                                                 + lights[l].getSpecularColor().x);
                     green += ambient_coefficient*p.getAmbientColor().y
-                             + diffuse_coefficient*diffuse_strength*p.getDiffuseColor().y
-                             + specular_coefficient*spec_strength*p.getSpecularColor().y;
+                             + diffuse_coefficient*diffuse_strength*(p.getDiffuseColor().y
+                                                                     + lights[l].getDiffuseColor().y)
+                             + specular_coefficient*spec_strength*(p.getSpecularColor().y
+                                                                   + lights[l].getSpecularColor().y);
                     blue += ambient_coefficient*p.getAmbientColor().z
-                            + diffuse_coefficient*diffuse_strength*p.getDiffuseColor().z
-                            + specular_coefficient*spec_strength*p.getSpecularColor().z;
+                            + diffuse_coefficient*diffuse_strength*(p.getDiffuseColor().z
+                                                                    + lights[l].getDiffuseColor().z)
+                            + specular_coefficient*spec_strength*(p.getSpecularColor().z
+                                                                  + lights[l].getSpecularColor().z);
 
                     //now that we have computed the colors from the lighting we need to check if this pixel should be
                     //in shadow. This will be the case if there is another object between it and the light.
@@ -509,14 +521,20 @@ void RayTracer::trace(Mesh m)
 
                         //now we calculate the color of the pixel
                         red += ambient_coefficient*m.getAmbientColor().x
-                               + diffuse_coefficient*diffuse_strength*m.getDiffuseColor().x
-                               + specular_coefficient*spec_strength*m.getSpecularColor().x;
+                               + diffuse_coefficient*diffuse_strength*(m.getDiffuseColor().x
+                                                                       + lights[l].getDiffuseColor().x)
+                               + specular_coefficient*spec_strength*(m.getSpecularColor().x
+                                                                     + lights[l].getSpecularColor().x);
                         green += ambient_coefficient*m.getAmbientColor().y
-                                 + diffuse_coefficient*diffuse_strength*m.getDiffuseColor().y
-                                 + specular_coefficient*spec_strength*m.getSpecularColor().y;
+                                 + diffuse_coefficient*diffuse_strength*(m.getDiffuseColor().y
+                                                                         + lights[l].getDiffuseColor().y)
+                                 + specular_coefficient*spec_strength*(m.getSpecularColor().y
+                                                                       + lights[l].getSpecularColor().y);
                         blue += ambient_coefficient*m.getAmbientColor().z
-                                + diffuse_coefficient*diffuse_strength*m.getDiffuseColor().z
-                                + specular_coefficient*spec_strength*m.getSpecularColor().z;
+                                + diffuse_coefficient*diffuse_strength*(m.getDiffuseColor().z
+                                                                        + lights[l].getDiffuseColor().z)
+                                + specular_coefficient*spec_strength*(m.getSpecularColor().z
+                                                                      + lights[l].getSpecularColor().z);
 
                         //now that we have computed the colors from the lighting we need to check if this pixel should be
                         //in shadow. This will be the case if there is another object between it and the light.
